@@ -266,10 +266,10 @@ export default function DistributorPage() {
             <a 
               href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20mendaftar%20sebagai%20Distributor.`}
               target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-500 text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl shadow-red-500/20 hover:shadow-red-500/40 hover:-translate-y-1"
+              className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base transition-all shadow-xl shadow-red-500/20 hover:shadow-red-500/40 hover:-translate-y-1 text-center max-w-[280px] sm:max-w-none mx-auto leading-tight"
             >
-              Hubungi Sekarang / Ajukan Kerjasama
-              <ArrowRight className="w-6 h-6" />
+              <span>Hubungi Sekarang / Ajukan Kerjasama</span>
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </a>
           </div>
         </motion.div>
