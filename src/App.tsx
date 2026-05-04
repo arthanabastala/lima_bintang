@@ -23,7 +23,7 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen font-sans antialiased text-slate-300 bg-slate-950 selection:bg-blue-500 selection:text-white pb-20 relative overflow-hidden">
+    <div className="min-h-screen font-sans antialiased text-slate-300 bg-slate-950 selection:bg-blue-500 selection:text-white pb-20 relative overflow-x-hidden">
       <ScrollToTop />
       <div className="fixed inset-0 z-[-1] pointer-events-none">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/10 rounded-full blur-[120px]"></div>

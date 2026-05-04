@@ -19,12 +19,16 @@ body {
   background-color: #020617;
   color: #f8fafc;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Base styling for smooth scroll */
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Custom scrollbar */

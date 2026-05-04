@@ -52,9 +52,9 @@ export default function Contact() {
                 <div className="w-12 h-12 glass-card rounded-full flex items-center justify-center text-yellow-500 shrink-0 mr-6 hover:bg-yellow-500/10 transition-colors">
                   <Mail strokeWidth={1.5} className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Email</h4>
-                  <a href="mailto:sandywu@tutelagesdnbhdindo.com" className="text-lg text-white font-medium hover:text-yellow-500 transition-colors">
+                  <a href="mailto:sandywu@tutelagesdnbhdindo.com" className="text-base sm:text-lg text-white font-medium hover:text-yellow-500 transition-colors break-words lg:break-normal line-clamp-2 md:line-clamp-none" style={{ wordBreak: 'break-word' }}>
                     sandywu@tutelagesdnbhdindo.com
                   </a>
                 </div>
@@ -64,9 +64,9 @@ export default function Contact() {
                 <div className="w-12 h-12 glass-card rounded-full flex items-center justify-center text-yellow-500 shrink-0 mr-6 hover:bg-yellow-500/10 transition-colors">
                   <Phone strokeWidth={1.5} className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">WhatsApp</h4>
-                  <a href="https://wa.me/6281210620683" target="_blank" rel="noopener noreferrer" className="text-lg text-white font-medium hover:text-yellow-500 transition-colors">
+                  <a href="https://wa.me/6281210620683" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white font-medium hover:text-yellow-500 transition-colors">
                     +62 812-1062-0683
                   </a>
                 </div>
@@ -76,9 +76,9 @@ export default function Contact() {
                 <div className="w-12 h-12 glass-card rounded-full flex items-center justify-center text-yellow-500 shrink-0 mr-6 hover:bg-yellow-500/10 transition-colors">
                   <MapPin strokeWidth={1.5} className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Pabrik & Kantor</h4>
-                  <a href="https://share.google/jpGGJ9qd5jFEwerFo" target="_blank" rel="noopener noreferrer" className="text-lg text-white font-medium hover:text-yellow-500 transition-colors block">
+                  <a href="https://share.google/jpGGJ9qd5jFEwerFo" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white font-medium hover:text-yellow-500 transition-colors block leading-relaxed pr-4">
                     PT. Tutelage Sdn Bhd Indonesia<br />
                     Cipelang Cijeruk 16740<br />
                     Bogor, Jawa Barat, Indonesia

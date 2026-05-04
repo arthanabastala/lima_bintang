@@ -110,9 +110,9 @@ export default function PricingPage() {
                  <h3 className="text-lg font-bold text-yellow-500">{section.category}</h3>
                </div>
                
-               <div className="overflow-x-auto">
-                 <table className="w-full text-left border-collapse">
-                   <thead>
+               <div className="">
+                 <table className="w-full text-left border-collapse block md:table">
+                   <thead className="hidden md:table-header-group">
                      <tr className="bg-slate-900/50 text-slate-400 text-sm uppercase tracking-wider">
                        <th className="px-6 py-4 font-semibold w-[40%]">Product Name</th>
                        <th className="px-6 py-4 font-semibold w-[20%]">Size / Packaging</th>
@@ -120,13 +120,24 @@ export default function PricingPage() {
                        <th className="px-6 py-4 font-semibold w-[20%]">Notes</th>
                      </tr>
                    </thead>
-                   <tbody className="divide-y divide-white/5">
+                   <tbody className="divide-y divide-white/5 block md:table-row-group">
                      {section.items.map((row, rowIdx) => (
-                       <tr key={rowIdx} className="hover:bg-white/5 transition-colors">
-                         <td className="px-6 py-4 text-white font-medium">{row.name}</td>
-                         <td className="px-6 py-4 text-slate-300 text-sm">{row.size}</td>
-                         <td className="px-6 py-4 text-yellow-500 font-bold whitespace-nowrap">{row.price}</td>
-                         <td className="px-6 py-4 text-slate-400 text-sm">{row.notes}</td>
+                       <tr key={rowIdx} className="hover:bg-white/5 transition-colors block md:table-row border-b border-white/5 md:border-none last:border-0 relative">
+                         <td className="px-6 py-3 md:py-4 text-white font-bold md:font-medium block md:table-cell text-base md:text-base bg-white/5 md:bg-transparent">
+                           {row.name}
+                         </td>
+                         <td className="px-6 py-2 md:py-4 text-slate-300 text-sm block md:table-cell flex flex-col md:table-cell">
+                           <span className="text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-0.5 md:hidden">Size / Packaging</span>
+                           {row.size}
+                         </td>
+                         <td className="px-6 py-2 md:py-4 text-yellow-500 font-bold block md:table-cell whitespace-normal md:whitespace-nowrap flex flex-col md:table-cell">
+                           <span className="text-[10px] uppercase tracking-wider text-yellow-100/50 font-bold mb-0.5 md:hidden">Ex-Factory Price</span>
+                           {row.price}
+                         </td>
+                         <td className="px-6 py-2 pb-4 md:py-4 text-slate-400 text-sm block md:table-cell flex flex-col md:table-cell">
+                           <span className="text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-0.5 md:hidden">Notes</span>
+                           {row.notes}
+                         </td>
                        </tr>
                      ))}
                    </tbody>

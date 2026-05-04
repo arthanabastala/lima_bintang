@@ -43,14 +43,14 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-slate-900/80 backdrop-blur-md border-b border-white/5 py-4 shadow-md" : "bg-transparent py-6 border-b border-transparent"
+        scrolled ? "bg-slate-900/80 backdrop-blur-md border-b border-white/5 py-4 shadow-md" : "bg-transparent py-4 sm:py-6 border-b border-transparent"
       }`}
     >
-      <div className="max-w-[100rem] mx-auto px-8 sm:px-12 lg:px-20 xl:px-24 flex items-center justify-between">
+      <div className="max-w-[100rem] mx-auto px-5 sm:px-8 lg:px-12 xl:px-20 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0 lg:mr-8 xl:mr-16">
-          <Globe strokeWidth={1.5} className="w-8 h-8 text-yellow-500" />
-          <span className="font-bold text-xl tracking-tight text-white uppercase">
+        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 group shrink-0 lg:mr-8 xl:mr-16">
+          <Globe strokeWidth={1.5} className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-500 shrink-0" />
+          <span className="font-bold text-lg sm:text-xl tracking-tight text-white uppercase truncate max-w-[200px] sm:max-w-none">
             LIMA<span className="font-light text-yellow-500">BINTANG</span>
           </span>
         </Link>

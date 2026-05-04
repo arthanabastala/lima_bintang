@@ -153,10 +153,10 @@ export default function ContactPage() {
                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
                      <MapPin className="w-6 h-6 text-yellow-500" />
                    </div>
-                   <div>
+                   <div className="flex-1 min-w-0">
                      <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Alamat</p>
-                     <p className="text-white font-semibold text-lg">Cipelang Cijeruk 16740</p>
-                     <p className="text-slate-400">Bogor, Jawa Barat, Indonesia</p>
+                     <p className="text-white font-semibold text-base sm:text-lg break-words">Cipelang Cijeruk 16740</p>
+                     <p className="text-slate-400 break-words">Bogor, Jawa Barat, Indonesia</p>
                    </div>
                  </div>
 
@@ -164,9 +164,9 @@ export default function ContactPage() {
                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
                      <Phone className="w-6 h-6 text-yellow-500" />
                    </div>
-                   <div>
+                   <div className="flex-1 min-w-0">
                      <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">WhatsApp / Telepon</p>
-                     <p className="text-white font-semibold text-lg">+62 812-1062-0683</p>
+                     <p className="text-white font-semibold text-base sm:text-lg break-words">+62 812-1062-0683</p>
                    </div>
                  </div>
 
@@ -174,9 +174,9 @@ export default function ContactPage() {
                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
                      <Mail className="w-6 h-6 text-yellow-500" />
                    </div>
-                   <div>
+                   <div className="flex-1 min-w-0">
                      <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Email</p>
-                     <p className="text-white font-semibold text-lg">sandywu@tutelagesdnbhdindo.com</p>
+                     <p className="text-white font-semibold text-base sm:text-lg break-words lg:break-normal line-clamp-2 md:line-clamp-none" style={{ wordBreak: 'break-word' }}>sandywu@tutelagesdnbhdindo.com</p>
                    </div>
                  </div>
 
@@ -184,9 +184,9 @@ export default function ContactPage() {
                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
                      <Globe className="w-6 h-6 text-yellow-500" />
                    </div>
-                   <div>
+                   <div className="flex-1 min-w-0">
                      <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Website</p>
-                     <p className="text-white font-semibold text-lg">tutelagesdnbhdindo.com</p>
+                     <p className="text-white font-semibold text-base sm:text-lg break-words">tutelagesdnbhdindo.com</p>
                    </div>
                  </div>
                </div>

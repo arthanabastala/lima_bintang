@@ -21,23 +21,23 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center w-full"
         >
-          <div className="flex gap-2 mb-3">
+          <div className="flex gap-1 sm:gap-2 mb-3">
             {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} strokeWidth={1.5} className="w-5 h-5 text-yellow-500" />
+              <Star key={i} strokeWidth={1.5} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
             ))}
           </div>
-          <div className="text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-6 glass-card px-4 py-2 pl-4">
+          <div className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-3 sm:px-4 py-1.5 sm:py-2">
             PT. Tutelage Sdn Bhd Indonesia
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 mt-2">
-            LIMA BINTANG <span className="text-yellow-500">Home Care</span>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 sm:mb-6 mt-2">
+            LIMA BINTANG <br className="sm:hidden" /><span className="text-yellow-500 block sm:inline mt-1 sm:mt-0">Home Care</span>
           </h1>
         </motion.div>
 
