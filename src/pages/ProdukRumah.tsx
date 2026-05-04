@@ -1,0 +1,231 @@
+import { motion } from "motion/react";
+import { ShoppingCart } from "lucide-react";
+import { useState } from "react";
+
+export default function ProdukRumah() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filterCategories = [
+    "All", 
+    "Dishwash Series", 
+    "Laundry Series", 
+    "Floor Care", 
+    "Specialty", 
+    "Disinfectant", 
+    "Personal Care"
+  ];
+
+  const allProducts = [
+    {
+      category: "Dishwash Series",
+      name: "DishPro",
+      description: "Sabun Cuci Piring – Formulasi jernih anti lemak, wangi tahan lama, aman untuk kulit tangan.",
+      variants: [
+        { size: "90ML", price: "Rp 650", package: "(36 pouch/dus)" },
+        { size: "110ML", price: "Rp 850", package: "(30 pouch/dus)" }
+      ],
+      label: "Best Seller",
+      image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Laundry Series",
+      name: "CleanWash Liquid",
+      description: "Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML.",
+      price: "Rp 18.000 – 22.000 / botol",
+      image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Laundry Series",
+      name: "CleanWash Powder",
+      description: "Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr.",
+      price: "Rp 7.000 – 9.000 / pcs",
+      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Laundry Series",
+      name: "Smooth Care",
+      description: "Pewangi & Pelicin Setrika – Pakaian lebih rapi, wangi tahan lama, mudah disetrika.",
+      variants: [
+        { size: "500ML", price: "Rp 12.000" },
+        { size: "1000ML", price: "Rp 20.000" }
+      ],
+      image: "https://images.unsplash.com/photo-1583947581924-860bda6a5c1f?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Laundry Series",
+      name: "LuxPerfume Laundry",
+      description: "Parfum Laundry Premium – Harum mewah tahan lama. Per liter.",
+      price: "Rp 25.000 – 35.000 / liter",
+      image: "https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Floor Care",
+      name: "SuperFloor",
+      description: "Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML.",
+      price: "Rp 16.000 – 20.000 / botol",
+      image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Specialty",
+      name: "PowerDescale",
+      description: "Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML.",
+      price: "Rp 18.000 – 25.000 / botol",
+      image: "https://images.unsplash.com/photo-1584949514120-f10f2756d11f?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Disinfectant",
+      name: "Karbol FreshGuard",
+      description: "Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML.",
+      price: "Rp 14.000 – 18.000 / botol",
+      image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
+    },
+    {
+      category: "Personal Care",
+      name: "BodyFresh Liquid Soap",
+      description: "Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML.",
+      price: "Rp 18.000 – 25.000 / botol",
+      image: "https://images.unsplash.com/photo-1556228578-8d890c2827c1?auto=format&fit=crop&w=600&h=600&q=80",
+    }
+  ];
+
+  const filteredProducts = activeFilter === "All" 
+    ? allProducts 
+    : allProducts.filter(product => product.category === activeFilter);
+
+  return (
+    <div className="pt-24 pb-20 bg-transparent min-h-screen text-white">
+      {/* Hero Section */}
+      <section className="relative py-16 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="absolute inset-0 bg-blue-500/5 rounded-3xl -z-10 bg-gradient-to-br from-yellow-500/10 to-transparent"></div>
+        <div className="text-center max-w-3xl mx-auto p-12 rounded-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+              Produk Rumah
+            </h1>
+            <p className="text-xl text-yellow-500 font-medium mb-6 tracking-wide">
+              Rangkaian Produk Kebersihan Lengkap
+            </p>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              Tersedia berbagai produk kebersihan rumah tangga dengan kualitas terstandarisasi, efektif digunakan, dan harga terjangkau untuk kebutuhan sehari-hari maupun bisnis distribusi.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Filter Menu */}
+      <section className="py-8 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          {filterCategories.map((category, idx) => (
+            <button 
+              key={idx}
+              onClick={() => setActiveFilter(category)}
+              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-sm border ${
+                activeFilter === category 
+                  ? "bg-yellow-500 text-slate-900 border-yellow-500 shadow-yellow-500/20 translate-y-[-2px] shadow-md" 
+                  : "bg-white/5 text-slate-300 hover:bg-white/10 border-white/10"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {/* Product Grid */}
+      <section className="py-12 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProducts.map((product, productIndex) => (
+            <motion.div
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.4 }}
+              key={product.name}
+              className="bg-slate-900/80 rounded-2xl overflow-hidden group hover:shadow-xl hover:shadow-yellow-500/5 transition-all shadow-md flex flex-col border border-white/10 hover:border-yellow-500/50 hover:bg-slate-900 relative"
+            >
+              {/* Product Image */}
+              <div className="aspect-[4/3] overflow-hidden relative bg-white/5 flex items-center justify-center border-b border-white/5">
+                <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 relative z-0" 
+                />
+                
+                {product.label && (
+                  <div className="absolute top-4 right-4 bg-yellow-500 text-slate-900 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-md z-20">
+                    {product.label}
+                  </div>
+                )}
+                
+                <div className="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-sm text-slate-300 border border-white/10 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm z-20">
+                  {product.category}
+                </div>
+              </div>
+
+              {/* Product Info */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-white mb-2 tracking-tight group-hover:text-yellow-500 transition-colors">
+                  {product.name}
+                </h3>
+                <p className="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
+                  {product.description}
+                </p>
+                
+                <div className="pt-5 border-t border-white/5 mt-auto">
+                  {product.variants ? (
+                    <div className="space-y-3">
+                      {product.variants.map((variant, vIdx) => (
+                        <div key={vIdx} className="flex justify-between items-center text-sm">
+                          <span className="text-slate-300 font-medium">{variant.size}</span>
+                          <div className="text-right">
+                            <span className="text-yellow-500 font-bold block">{variant.price}</span>
+                            {variant.package && (
+                              <span className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider block mt-0.5">{variant.package}</span>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="flex justify-between items-end gap-2">
+                      <div>
+                        <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1 focus:outline-none">
+                          Harga Mulai
+                        </div>
+                        <span className="text-lg font-bold text-yellow-500 block leading-none">{product.price}</span>
+                      </div>
+                      <a 
+                        href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20pesan%20produk%20${encodeURIComponent(product.name)}`}
+                        target="_blank" rel="noopener noreferrer"
+                        className="bg-white/5 hover:bg-yellow-500 hover:text-slate-900 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors shrink-0"
+                      >
+                        <ShoppingCart className="w-4 h-4" />
+                      </a>
+                    </div>
+                  )}
+
+                  {product.variants && (
+                    <a 
+                      href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20pesan%20produk%20${encodeURIComponent(product.name)}`}
+                      target="_blank" rel="noopener noreferrer"
+                      className="w-full mt-5 py-2.5 bg-white/5 hover:bg-yellow-500 hover:text-slate-900 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-colors flex justify-center items-center gap-2"
+                    >
+                      <ShoppingCart className="w-4 h-4" />
+                      Pesan Sekarang
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
