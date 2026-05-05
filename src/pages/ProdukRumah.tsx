@@ -43,7 +43,7 @@ export default function ProdukRumah() {
     },
     {
       category: "Laundry Series",
-      name: "Smooth Care",
+      name: "LIMA BINTANG SMOOTH CARE",
       description: "Pewangi & Pelicin Setrika – Pakaian lebih rapi, wangi tahan lama, mudah disetrika.",
       variants: [
         { size: "500ML", price: "Rp 12.000" },
@@ -67,7 +67,7 @@ export default function ProdukRumah() {
     },
     {
       category: "Specialty",
-      name: "PowerDescale",
+      name: "LIMA BINTANG X-CLEAN",
       description: "Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML.",
       price: "Rp 18.000 – 25.000 / botol",
       image: "https://images.unsplash.com/photo-1584949514120-f10f2756d11f?auto=format&fit=crop&w=600&h=600&q=80",

@@ -15,11 +15,11 @@ export default function PricingPage() {
       items: [
         { name: "CleanWash Liquid – Sabun Cuci Pakaian", size: "1000ML / botol", price: "Rp 18.000 – 22.000", notes: "-" },
         { name: "CleanWash Powder – Deterjen Bubuk", size: "±800–900gr / pcs", price: "Rp 7.000 – 9.000", notes: "-" },
-        { name: "Smooth Care – Pewangi & Pelicin", size: "500ML / kemasan", price: "Rp 12.000", notes: "-" },
-        { name: "Smooth Care – Pewangi & Pelicin", size: "1000ML / kemasan", price: "Rp 20.000", notes: "-" },
+        { name: "LIMA BINTANG SMOOTH CARE – Pewangi & Pelicin", size: "500ML / kemasan", price: "Rp 12.000", notes: "-" },
+        { name: "LIMA BINTANG SMOOTH CARE – Pewangi & Pelicin", size: "1000ML / kemasan", price: "Rp 20.000", notes: "-" },
         { name: "LuxPerfume Laundry – Parfum Premium", size: "1 Liter", price: "Rp 25.000 – 35.000", notes: "-" },
         { name: "SuperFloor – Pembersih Lantai", size: "1000ML / botol", price: "Rp 16.000 – 20.000", notes: "-" },
-        { name: "PowerDescale – Pembersih Kerak", size: "1000ML / botol", price: "Rp 18.000 – 25.000", notes: "-" },
+        { name: "LIMA BINTANG X-CLEAN – Pembersih Kerak", size: "1000ML / botol", price: "Rp 18.000 – 25.000", notes: "-" },
         { name: "Karbol FreshGuard – Anti Bakteri", size: "1000ML / botol", price: "Rp 14.000 – 18.000", notes: "-" },
         { name: "BodyFresh Liquid Soap", size: "1000ML / botol", price: "Rp 18.000 – 25.000", notes: "-" },
       ]
@@ -72,8 +72,13 @@ export default function PricingPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
               Harga & Price List
             </h1>
-            <p className="text-xl text-yellow-500 font-medium tracking-wide">
-              Daftar Harga Produk LIMA BINTANG
+            <p className="text-xl text-yellow-500 font-medium tracking-wide flex items-center justify-center gap-2">
+              Daftar Harga Produk 
+              <img 
+                src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                alt="Lima Bintang" 
+                className="h-6 sm:h-8 w-auto object-contain"
+              />
             </p>
           </motion.div>
         </div>

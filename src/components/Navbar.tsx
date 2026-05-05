@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
@@ -35,6 +35,7 @@ export default function Navbar() {
         { name: "PET CARE", href: "/pet-care" },
       ]
     },
+    { name: "GALERI", href: "/galeri" },
     { name: "DISTRIBUTOR", href: "/distributor" },
     { name: "HARGA", href: "/harga" },
     { name: "OEM/MAKLON", href: "/oem" },
@@ -48,11 +49,12 @@ export default function Navbar() {
     >
       <div className="max-w-[100rem] mx-auto px-5 sm:px-8 lg:px-12 xl:px-20 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 group shrink-0 lg:mr-8 xl:mr-16">
-          <Globe strokeWidth={1.5} className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-500 shrink-0" />
-          <span className="font-bold text-lg sm:text-xl tracking-tight text-white uppercase truncate max-w-[200px] sm:max-w-none">
-            LIMA<span className="font-light text-yellow-500">BINTANG</span>
-          </span>
+        <Link to="/" className="flex items-center group shrink-0 lg:mr-8 xl:mr-16">
+          <img 
+            src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+            alt="Lima Bintang Logo" 
+            className="h-8 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Nav */}

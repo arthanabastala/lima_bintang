@@ -1,16 +1,15 @@
-import { Globe } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="bg-slate-900/50 backdrop-blur-md border-t border-white/5 text-white py-12 relative z-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2">
-             <a href="/" className="flex items-center gap-2 mb-4">
-              <Globe strokeWidth={1.5} className="w-6 h-6 text-yellow-500" />
-              <span className="font-bold text-xl tracking-tight text-white uppercase">
-                LIMA<span className="font-light text-yellow-500">BINTANG</span>
-              </span>
+             <a href="/" className="flex items-center mb-4 group">
+              <img 
+                src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                alt="Lima Bintang Logo" 
+                className="h-8 max-w-[200px] object-contain transition-transform group-hover:scale-105"
+              />
             </a>
             <p className="text-slate-400 text-sm max-w-sm">
               Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia.

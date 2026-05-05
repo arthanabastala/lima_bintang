@@ -36,8 +36,13 @@ export default function Hero() {
           <div className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-3 sm:px-4 py-1.5 sm:py-2">
             PT. Tutelage Sdn Bhd Indonesia
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 sm:mb-6 mt-2">
-            LIMA BINTANG <br className="sm:hidden" /><span className="text-yellow-500 block sm:inline mt-1 sm:mt-0">Home Care</span>
+          <h1 className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-2 mb-4 sm:mb-6 mt-2">
+            <img 
+              src="https://placehold.co/600x150/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+              alt="Lima Bintang" 
+              className="h-10 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
+            />
+            <span className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-500 tracking-tight">Home Care</span>
           </h1>
         </motion.div>
 

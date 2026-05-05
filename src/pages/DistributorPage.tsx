@@ -96,8 +96,13 @@ export default function DistributorPage() {
               <div className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">
                 Kerjasama Distribusi Eksklusif Nasional
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-                Jadilah Distributor Utama <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">LIMA BINTANG</span>
+              <h1 className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
+                <span>Jadilah Distributor Utama</span>
+                <img 
+                  src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                  alt="Lima Bintang" 
+                  className="h-10 md:h-12 lg:h-16 w-auto object-contain"
+                />
               </h1>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
                 Program distribusi eksklusif dengan sistem 1 distributor per wilayah. Bisnis jangka panjang dengan cashflow stabil dan margin kompetitif.
