@@ -124,7 +124,7 @@ export default function DistributorPage() {
               className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl"
              >
                <img 
-                 src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&w=1000&q=80" 
+                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80" 
                  alt="Business Meeting" 
                  className="w-full h-auto object-cover"
                />
