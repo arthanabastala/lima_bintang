@@ -4,7 +4,7 @@ import { ShoppingCart, Leaf, Sparkles, Droplets, Briefcase, Heart } from "lucide
 
 export default function PetCare() {
   const product = {
-    name: "PetCare Shampoo",
+    name: "LIMA BINTANG PetCare Shampoo",
     description: "Shampoo hewan peliharaan dengan formula lembut khusus untuk kucing, anjing, dan hewan lainnya. Membersihkan kotoran dan bau, serta merawat bulu agar lembut dan berkilau.",
     price: "Rp 20.000 – 35.000",
     size: "1000ML",
@@ -95,7 +95,7 @@ export default function PetCare() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-2">
                       <img 
-                        src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                        src="logo.png" 
                         alt="LIMA BINTANG" 
                         className="h-6 sm:h-8 object-contain"
                       />

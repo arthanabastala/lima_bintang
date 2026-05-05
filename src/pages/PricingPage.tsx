@@ -6,37 +6,37 @@ export default function PricingPage() {
     {
       category: "A. Dishwash Series – Fast Moving",
       items: [
-        { name: "DishPro – Sabun Cuci Piring", size: "90ML / pouch", price: "Rp 650 / pouch", notes: "36 pouch / dus" },
-        { name: "DishPro – Sabun Cuci Piring", size: "110ML / pouch", price: "Rp 850 / pouch", notes: "30 pouch / dus" }
+        { name: "LIMA BINTANG DishPro – Sabun Cuci Piring", size: "90ML / pouch", price: "Rp 650 / pouch", notes: "36 pouch / dus" },
+        { name: "LIMA BINTANG DishPro – Sabun Cuci Piring", size: "110ML / pouch", price: "Rp 850 / pouch", notes: "30 pouch / dus" }
       ]
     },
     {
       category: "B. Laundry & Household Series",
       items: [
-        { name: "CleanWash Liquid – Sabun Cuci Pakaian", size: "1000ML / pouch", price: "Rp 18.000 – 22.000", notes: "-" },
-        { name: "CleanWash Powder – Deterjen Bubuk", size: "±800–900gr / pcs", price: "Rp 7.000 – 9.000", notes: "-" },
-        { name: "LIMA BINTANG SMOOTH CARE – Pewangi & Pelicin", size: "500ML / kemasan", price: "Rp 12.000", notes: "-" },
-        { name: "LIMA BINTANG SMOOTH CARE – Pewangi & Pelicin", size: "1000ML / kemasan", price: "Rp 20.000", notes: "-" },
-        { name: "LuxPerfume Laundry – Parfum Premium", size: "1 Liter", price: "Rp 25.000 – 35.000", notes: "-" },
-        { name: "SuperFloor – Pembersih Lantai", size: "1000ML / pouch", price: "Rp 16.000 – 20.000", notes: "-" },
-        { name: "LIMA BINTANG X-CLEAN – Pembersih Kerak", size: "1000ML / botol", price: "Rp 18.000 – 25.000", notes: "-" },
-        { name: "Karbol FreshGuard – Anti Bakteri", size: "1000ML / pouch", price: "Rp 14.000 – 18.000", notes: "-" },
-        { name: "BodyFresh Liquid Soap", size: "1000ML / pouch", price: "Rp 18.000 – 25.000", notes: "-" },
+        { name: "LIMA BINTANG CleanWash Liquid – Sabun Cuci Pakaian", size: "1000ML / pouch", price: "Rp 18.000 – 22.000", notes: "-" },
+        { name: "LIMA BINTANG CleanWash Powder – Deterjen Bubuk", size: "±800–900gr / pcs", price: "Rp 7.000 – 9.000", notes: "-" },
+        { name: "LIMA BINTANG Smooth Care – Pewangi & Pelicin", size: "500ML / kemasan", price: "Rp 12.000", notes: "-" },
+        { name: "LIMA BINTANG Smooth Care – Pewangi & Pelicin", size: "1000ML / kemasan", price: "Rp 20.000", notes: "-" },
+        { name: "LIMA BINTANG LuxPerfume Laundry – Parfum Premium", size: "1 Liter", price: "Rp 25.000 – 35.000", notes: "-" },
+        { name: "LIMA BINTANG SuperFloor – Pembersih Lantai", size: "1000ML / pouch", price: "Rp 16.000 – 20.000", notes: "-" },
+        { name: "LIMA BINTANG X-Clean – Pembersih Kerak", size: "1000ML / botol", price: "Rp 18.000 – 25.000", notes: "-" },
+        { name: "LIMA BINTANG Karbol FreshGuard – Anti Bakteri", size: "1000ML / pouch", price: "Rp 14.000 – 18.000", notes: "-" },
+        { name: "LIMA BINTANG BodyFresh Liquid Soap", size: "1000ML / pouch", price: "Rp 18.000 – 25.000", notes: "-" },
       ]
     },
     {
       category: "C. Automotive Series",
       items: [
-        { name: "AutoShine Shampoo", size: "1000ML / pouch", price: "Rp 18.000 – 25.000", notes: "-" },
-        { name: "TireGloss Pro – Semir Ban", size: "Pcs", price: "Rp 20.000 – 30.000", notes: "-" },
-        { name: "GlassClear Pro – Jamur Kaca", size: "Pcs", price: "Rp 25.000 – 35.000", notes: "-" },
-        { name: "AutoPerfume Hanging", size: "Pcs", price: "Rp 8.000 – 12.000", notes: "-" }
+        { name: "LIMA BINTANG AutoShine Shampoo", size: "1000ML / pouch", price: "Rp 18.000 – 25.000", notes: "-" },
+        { name: "LIMA BINTANG TireGloss Pro – Semir Ban", size: "Pcs", price: "Rp 20.000 – 30.000", notes: "-" },
+        { name: "LIMA BINTANG GlassClear Pro – Jamur Kaca", size: "Pcs", price: "Rp 25.000 – 35.000", notes: "-" },
+        { name: "LIMA BINTANG AutoPerfume Hanging", size: "Pcs", price: "Rp 8.000 – 12.000", notes: "-" }
       ]
     },
     {
       category: "D. Pet Care Series",
       items: [
-        { name: "PetCare Shampoo", size: "1000ML / pouch", price: "Rp 20.000 – 35.000", notes: "Bebas bahan berbahaya" }
+        { name: "LIMA BINTANG PetCare Shampoo", size: "1000ML / pouch", price: "Rp 20.000 – 35.000", notes: "Bebas bahan berbahaya" }
       ]
     }
   ];
@@ -132,7 +132,7 @@ export default function PricingPage() {
                            {row.name.includes("LIMA BINTANG") ? (
                              <span className="flex items-center flex-wrap gap-1.5">
                                <img 
-                                 src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                                 src="logo.png" 
                                  alt="LIMA BINTANG" 
                                  className="h-4 sm:h-5 object-contain"
                                />

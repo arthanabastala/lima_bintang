@@ -18,7 +18,7 @@ export default function Portfolio() {
     {
       category: "Laundry Series",
       icon: <Shirt strokeWidth={1.5} className="w-6 h-6" />,
-      title: "CleanWash",
+      title: "LIMA BINTANG CleanWash",
       description: "Sabun Cuci Pakaian Cair & Bubuk",
       price: "Mulai Rp 7.000",
       label: "Best Seller",
@@ -29,7 +29,7 @@ export default function Portfolio() {
     {
       category: "Automotive Series",
       icon: <Car strokeWidth={1.5} className="w-6 h-6" />,
-      title: "AutoShine",
+      title: "LIMA BINTANG AutoShine",
       description: "Shampoo Mobil & Motor Premium",
       price: "Mulai Rp 18.000 / 1000ML",
       image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
@@ -38,7 +38,7 @@ export default function Portfolio() {
     {
       category: "Pet Care Series",
       icon: <PawPrint strokeWidth={1.5} className="w-6 h-6" />,
-      title: "PetCare",
+      title: "LIMA BINTANG PetCare",
       description: "Shampoo Hewan Peliharaan",
       price: "Mulai Rp 20.000 / 1000ML",
       image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80",

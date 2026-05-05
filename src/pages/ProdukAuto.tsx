@@ -5,7 +5,7 @@ export default function ProdukAuto() {
   const products = [
     {
       category: "Automotive Series",
-      name: "AutoShine Shampoo",
+      name: "LIMA BINTANG AutoShine Shampoo",
       description: "Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML.",
       price: "Rp 18.000 – 25.000 / pouch",
       label: "Terlaris",
@@ -13,21 +13,21 @@ export default function ProdukAuto() {
     },
     {
       category: "Automotive Series",
-      name: "TireGloss Pro",
+      name: "LIMA BINTANG TireGloss Pro",
       description: "Semir Ban – Kilap hitam pekat, tahan cuaca, melindungi karet dari keretakan.",
       price: "Rp 20.000 – 30.000 / pcs",
       image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Automotive Series",
-      name: "GlassClear Pro",
+      name: "LIMA BINTANG GlassClear Pro",
       description: "Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal.",
       price: "Rp 25.000 – 35.000 / pcs",
       image: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Automotive Series",
-      name: "AutoPerfume Hanging",
+      name: "LIMA BINTANG AutoPerfume Hanging",
       description: "Parfum Gantung Mobil – Aroma tahan lama dengan desain elegan untuk kabin kendaraan.",
       price: "Rp 8.000 – 12.000 / pcs",
       image: "https://images.unsplash.com/photo-1550505095-2ccdd20f31df?auto=format&fit=crop&w=600&h=600&q=80",
@@ -98,7 +98,7 @@ export default function ProdukAuto() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-1.5">
                       <img 
-                        src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                        src="logo.png" 
                         alt="LIMA BINTANG" 
                         className="h-5 sm:h-6 object-contain"
                       />
