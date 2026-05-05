@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function GaleriPage() {
   const images = [
-    { src: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=800&q=80", title: "Produk Rumah Tangga" },
-    { src: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=800&q=80", title: "Deterjen Cair" },
-    { src: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80", title: "Shampoo Auto" },
-    { src: "https://images.unsplash.com/photo-1583947581924-860bda6a5c1f?auto=format&fit=crop&w=800&q=80", title: "Pelicin Serbaguna" },
-    { src: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80", title: "Pet Care" },
-    { src: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=800&q=80", title: "Pembersih Kaca" },
+    { src: "/sabuncucipiring.png", title: "Produk Rumah Tangga" },
+    { src: "/Cleanwash_Liquid.jpeg", title: "Deterjen Cair" },
+    { src: "/AutoShine_Shampoo.png", title: "Shampoo Auto" },
+    { src: "/sampocare.jpeg", title: "Pelicin Serbaguna" },
+    { src: "/PetCare_Shampoo.png", title: "Pet Care" },
+    { src: "/GlassClearPro.png", title: "Pembersih Kaca" },
   ];
 
   return (
