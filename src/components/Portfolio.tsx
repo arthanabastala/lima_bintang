@@ -7,7 +7,7 @@ export default function Portfolio() {
     {
       category: "Household Series",
       icon: <Utensils strokeWidth={1.5} className="w-6 h-6" />,
-      title: "DishPro",
+      title: "LIMA BINTANG DishPro",
       description: "Sabun Cuci Piring – Formulasi Jernih & Wangi",
       price: "Mulai Rp 650 / pouch",
       label: "Fast Moving",
