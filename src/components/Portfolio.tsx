@@ -12,7 +12,7 @@ export default function Portfolio() {
       price: "Mulai Rp 650 / pouch",
       label: "Fast Moving",
       labelColor: "text-blue-400 bg-blue-500/20 border-blue-500/30",
-      image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/sabuncucipiring.png",
       link: "/produk-rumah"
     },
     {
@@ -23,7 +23,7 @@ export default function Portfolio() {
       price: "Mulai Rp 7.000",
       label: "Best Seller",
       labelColor: "text-yellow-400 bg-yellow-500/20 border-yellow-500/30",
-      image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/Cleanwash_Liquid.jpeg",
       link: "/produk-rumah"
     },
     {
@@ -32,7 +32,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG AutoShine",
       description: "Shampoo Mobil & Motor Premium",
       price: "Mulai Rp 18.000 / 1000ML",
-      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/AutoShine_Shampoo.png",
       link: "/produk-auto"
     },
     {
@@ -41,7 +41,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG PetCare",
       description: "Shampoo Hewan Peliharaan",
       price: "Mulai Rp 20.000 / 1000ML",
-      image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "PetCare_Shampoo.png",
       link: "/pet-care"
     }
   ];
