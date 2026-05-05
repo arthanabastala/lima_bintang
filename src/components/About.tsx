@@ -49,7 +49,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" 
+                src="home.jpeg" 
                 alt="Corporate Office" 
                 className="w-full h-full object-cover"
               />
