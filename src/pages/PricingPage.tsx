@@ -75,7 +75,7 @@ export default function PricingPage() {
             <p className="text-xl text-yellow-500 font-medium tracking-wide flex items-center justify-center gap-2">
               Daftar Harga Produk 
               <img 
-                src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                src="logo.png" 
                 alt="Lima Bintang" 
                 className="h-6 sm:h-8 w-auto object-contain"
               />
