@@ -49,7 +49,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden shadow-2xl">
               <img 
-                src="home.jpeg" 
+                src="branda.png" 
                 alt="Corporate Office" 
                 className="w-full h-full object-cover"
               />
