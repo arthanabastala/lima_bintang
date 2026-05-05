@@ -33,14 +33,14 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG CleanWash Liquid",
       description: "Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML.",
       price: "Rp 18.000 – 22.000 / pouch",
-      image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/Cleanwash_Liquid.jpeg",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Powder",
       description: "Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr.",
       price: "Rp 7.000 – 9.000 / pcs",
-      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/Cleanwash_Powder.jpeg",
     },
     {
       category: "Laundry Series",
@@ -50,7 +50,7 @@ export default function ProdukRumah() {
         { size: "500ML", price: "Rp 12.000" },
         { size: "1000ML", price: "Rp 20.000" }
       ],
-      image: "https://images.unsplash.com/photo-1583947581924-860bda6a5c1f?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/sampocare.jpeg",
     },
     {
       category: "LIMA BINTANG Laundry Series",
@@ -71,14 +71,14 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG X-CLEAN",
       description: "Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML.",
       price: "Rp 18.000 – 25.000 / botol",
-      image: "https://images.unsplash.com/photo-1584949514120-f10f2756d11f?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/X-Clean.jpeg",
     },
     {
       category: "Disinfectant",
       name: "LIMA BINTANG Karbol FreshGuard",
       description: "Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML.",
       price: "Rp 14.000 – 18.000 / pouch",
-      image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/Karbol_Freshgruard.jpeg",
     },
     {
       category: "Personal Care",
