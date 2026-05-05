@@ -35,7 +35,13 @@ export default function Navbar() {
         { name: "PET CARE", href: "/pet-care" },
       ]
     },
-    { name: "GALERI", href: "/galeri" },
+    { 
+      name: "GALERI", 
+      dropdown: [
+        { name: "GALERI PRODUK", href: "/galeri" },
+        { name: "GALERI PRODUKSI", href: "/galeri-produksi" },
+      ]
+    },
     { name: "DISTRIBUTOR", href: "/distributor" },
     { name: "HARGA", href: "/harga" },
     { name: "OEM/MAKLON", href: "/oem" },

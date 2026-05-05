@@ -12,6 +12,7 @@ import ProdukRumah from "./pages/ProdukRumah";
 import ProdukAuto from "./pages/ProdukAuto";
 import PetCare from "./pages/PetCare";
 import GaleriPage from "./pages/GaleriPage";
+import GaleriProduksiPage from "./pages/GaleriProduksiPage";
 import DistributorPage from "./pages/DistributorPage";
 import PricingPage from "./pages/PricingPage";
 import OemPage from "./pages/OemPage";
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="/produk-auto" element={<ProdukAuto />} />
             <Route path="/pet-care" element={<PetCare />} />
             <Route path="/galeri" element={<GaleriPage />} />
+            <Route path="/galeri-produksi" element={<GaleriProduksiPage />} />
             <Route path="/distributor" element={<DistributorPage />} />
             <Route path="/harga" element={<PricingPage />} />
             <Route path="/oem" element={<OemPage />} />
