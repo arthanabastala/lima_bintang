@@ -25,7 +25,8 @@ export default function ProdukRumah() {
         { size: "110ML", price: "Rp 850", package: "(30 pouch/dus)" }
       ],
       label: "Best Seller",
-      image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
+      image: <img src="sabuncucipiring.png">
+      
     },
     {
       category: "Laundry Series",
