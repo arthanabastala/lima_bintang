@@ -103,7 +103,18 @@ export default function Portfolio() {
                       {product.category}
                     </div>
                     <h3 className="text-xl font-bold text-white">
-                      {product.title}
+                      {product.title.includes("LIMA BINTANG") ? (
+                        <span className="flex items-center flex-wrap gap-1.5 leading-tight">
+                          <img 
+                            src="logo.png" 
+                            alt="LIMA BINTANG" 
+                            className="h-4 sm:h-5 object-contain inline-block -mt-1"
+                          />
+                          <span>{product.title.replace("LIMA BINTANG ", "")}</span>
+                        </span>
+                      ) : (
+                        product.title
+                      )}
                     </h3>
                   </div>
                 </div>

@@ -129,7 +129,18 @@ export default function PricingPage() {
                      {section.items.map((row, rowIdx) => (
                        <tr key={rowIdx} className="hover:bg-white/5 transition-colors block md:table-row border-b border-white/5 md:border-none last:border-0 relative">
                          <td className="px-6 py-3 md:py-4 text-white font-bold md:font-medium block md:table-cell text-base md:text-base bg-white/5 md:bg-transparent">
-                           {row.name}
+                           {row.name.includes("LIMA BINTANG") ? (
+                             <span className="flex items-center flex-wrap gap-1.5">
+                               <img 
+                                 src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                                 alt="LIMA BINTANG" 
+                                 className="h-4 sm:h-5 object-contain"
+                               />
+                               <span>{row.name.replace("LIMA BINTANG ", "")}</span>
+                             </span>
+                           ) : (
+                             row.name
+                           )}
                          </td>
                          <td className="px-6 py-2 md:py-4 text-slate-300 text-sm block md:table-cell flex flex-col md:table-cell">
                            <span className="text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-0.5 md:hidden">Size / Packaging</span>

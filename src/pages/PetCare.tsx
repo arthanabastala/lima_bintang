@@ -92,7 +92,18 @@ export default function PetCare() {
                   Pet Care
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight group-hover:text-yellow-500 transition-colors">
-                  {product.name}
+                  {product.name.includes("LIMA BINTANG") ? (
+                    <span className="flex items-center flex-wrap gap-2">
+                      <img 
+                        src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                        alt="LIMA BINTANG" 
+                        className="h-6 sm:h-8 object-contain"
+                      />
+                      <span>{product.name.replace("LIMA BINTANG ", "")}</span>
+                    </span>
+                  ) : (
+                    product.name
+                  )}
                 </h3>
                 <p className="text-slate-400 text-base mb-8 flex-1 leading-relaxed">
                   {product.description}

@@ -171,7 +171,18 @@ export default function ProdukRumah() {
               {/* Product Info */}
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-white mb-2 tracking-tight group-hover:text-yellow-500 transition-colors">
-                  {product.name}
+                  {product.name.includes("LIMA BINTANG") ? (
+                    <span className="flex items-center flex-wrap gap-1.5">
+                      <img 
+                        src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
+                        alt="LIMA BINTANG" 
+                        className="h-5 sm:h-6 object-contain"
+                      />
+                      <span>{product.name.replace("LIMA BINTANG ", "")}</span>
+                    </span>
+                  ) : (
+                    product.name
+                  )}
                 </h3>
                 <p className="text-slate-400 text-sm mb-6 flex-1 leading-relaxed">
                   {product.description}
