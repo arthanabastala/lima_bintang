@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center group shrink-0 lg:mr-8 xl:mr-16">
           <img 
-            src="/logo.png" 
+            src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
             alt="Lima Bintang Logo" 
             className="h-8 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
           />

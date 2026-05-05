@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
           <h1 className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-2 mb-4 sm:mb-6 mt-2">
             <img 
-              src="logo.png" 
+              src="https://placehold.co/600x150/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
               alt="Lima Bintang" 
               className="h-10 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
             />

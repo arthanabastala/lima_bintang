@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="col-span-2">
              <a href="/" className="flex items-center mb-4 group">
               <img 
-                src="logo.png" 
+                src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
                 alt="Lima Bintang Logo" 
                 className="h-8 max-w-[200px] object-contain transition-transform group-hover:scale-105"
               />

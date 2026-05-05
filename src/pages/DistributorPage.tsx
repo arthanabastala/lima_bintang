@@ -99,7 +99,7 @@ export default function DistributorPage() {
               <h1 className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 <span>Jadilah Distributor Utama</span>
                 <img 
-                  src="logo.png" 
+                  src="https://placehold.co/400x100/1e293b/eab308?text=LIMA+BINTANG+LOGO" 
                   alt="Lima Bintang" 
                   className="h-10 md:h-12 lg:h-16 w-auto object-contain"
                 />

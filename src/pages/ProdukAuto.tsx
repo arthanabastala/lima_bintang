@@ -7,7 +7,7 @@ export default function ProdukAuto() {
       category: "Automotive Series",
       name: "AutoShine Shampoo",
       description: "Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML.",
-      price: "Rp 18.000 – 25.000 / botol",
+      price: "Rp 18.000 – 25.000 / pouch",
       label: "Terlaris",
       image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&h=600&q=80",
     },

@@ -31,7 +31,7 @@ export default function ProdukRumah() {
       category: "Laundry Series",
       name: "CleanWash Liquid",
       description: "Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML.",
-      price: "Rp 18.000 – 22.000 / botol",
+      price: "Rp 18.000 – 22.000 / pouch",
       image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
@@ -62,7 +62,7 @@ export default function ProdukRumah() {
       category: "Floor Care",
       name: "SuperFloor",
       description: "Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML.",
-      price: "Rp 16.000 – 20.000 / botol",
+      price: "Rp 16.000 – 20.000 / pouch",
       image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
@@ -76,14 +76,14 @@ export default function ProdukRumah() {
       category: "Disinfectant",
       name: "Karbol FreshGuard",
       description: "Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML.",
-      price: "Rp 14.000 – 18.000 / botol",
+      price: "Rp 14.000 – 18.000 / pouch",
       image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Personal Care",
       name: "BodyFresh Liquid Soap",
       description: "Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML.",
-      price: "Rp 18.000 – 25.000 / botol",
+      price: "Rp 18.000 – 25.000 / pouch",
       image: "https://images.unsplash.com/photo-1556228578-8d890c2827c1?auto=format&fit=crop&w=600&h=600&q=80",
     }
   ];
