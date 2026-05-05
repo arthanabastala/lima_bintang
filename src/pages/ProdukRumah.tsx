@@ -53,14 +53,14 @@ export default function ProdukRumah() {
     },
     {
       category: "LIMA BINTANG Laundry Series",
-      name: "LuxPerfume Laundry",
+      name: "LIMA BINTANG LuxPerfume Laundry",
       description: "Parfum Laundry Premium – Harum mewah tahan lama. Per liter.",
       price: "Rp 25.000 – 35.000 / liter",
       image: "https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "LIMA BINTANG Floor Care",
-      name: "SuperFloor",
+      name: "LIMA BINTANG SuperFloor",
       description: "Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML.",
       price: "Rp 16.000 – 20.000 / pouch",
       image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80",
