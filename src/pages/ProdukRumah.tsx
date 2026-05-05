@@ -25,7 +25,7 @@ export default function ProdukRumah() {
         { size: "110ML", price: "Rp 850", package: "(30 pouch/dus)" }
       ],
       label: "Best Seller",
-      image: <img src="sabuncucipiring.png"/>
+      image: "/sabuncucipiring.png",
       
     },
     {
