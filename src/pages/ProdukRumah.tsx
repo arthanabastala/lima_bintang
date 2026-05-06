@@ -9,7 +9,7 @@ export default function ProdukRumah() {
     "All", 
     "Dishwash Series", 
     "Laundry Series", 
-    "Floor Care", 
+    // "Floor Care", 
     "Specialty", 
     "Disinfectant", 
     "Personal Care"
