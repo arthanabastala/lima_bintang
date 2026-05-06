@@ -45,16 +45,38 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative grid grid-cols-2 gap-3 sm:gap-4 aspect-square lg:aspect-[4/5] "
           >
-            <div className="aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden shadow-2xl">
+            <div className="rounded-tl-[3rem] sm:rounded-tl-[4rem] lg:rounded-tl-[70px] overflow-hidden shadow-2xl h-full">
               <img 
-                src="branda.png" 
-                alt="Corporate Office" 
-                className="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80" 
+                alt="Produk Household" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 glass-card p-6 lg:p-8 shadow-xl hidden sm:block border-l-4 border-yellow-500">
+            <div className="rounded-tr-2xl lg:rounded-tr-3xl overflow-hidden shadow-2xl h-full mt-6 sm:mt-8 lg:mt-12">
+              <img 
+                src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&h=600&q=80" 
+                alt="Produk Auto Care" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="rounded-bl-2xl lg:rounded-bl-3xl overflow-hidden shadow-2xl h-full -mt-6 sm:-mt-8 lg:-mt-12">
+              <img 
+                src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80" 
+                alt="Produk Pet Care" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[70px] overflow-hidden shadow-2xl h-full">
+              <img 
+                src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80" 
+                alt="General Cleaning" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            <div className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 glass-card p-6 lg:p-8 shadow-xl hidden sm:block border-l-4 border-yellow-500 z-10 bg-slate-900/90 backdrop-blur-md">
               <div className="text-3xl lg:text-4xl font-bold text-white mb-1">PRODUK</div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Kualitas Premium</div>
             </div>
