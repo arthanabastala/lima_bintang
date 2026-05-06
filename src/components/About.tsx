@@ -54,14 +54,14 @@ export default function About() {
             <div className="flex flex-col flex-1 gap-3 sm:gap-4 pb-6 sm:pb-8 lg:pb-12">
               <div className="rounded-tl-[3rem] sm:rounded-tl-[4rem] lg:rounded-tl-[70px] overflow-hidden shadow-2xl relative flex-1 group z-0 bg-slate-800/50 transform-gpu">
                 <img 
-                  src="https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80" 
+                  src="/sabuncucipiring.webp" 
                   alt="Produk Household" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
               </div>
               <div className="rounded-bl-2xl lg:rounded-bl-3xl overflow-hidden shadow-2xl relative flex-1 group z-0 bg-slate-800/50 transform-gpu">
                 <img 
-                  src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80" 
+                  src="/PetCare_Shampoo.webp" 
                   alt="Produk Pet Care" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
@@ -72,14 +72,14 @@ export default function About() {
             <div className="flex flex-col flex-1 gap-3 sm:gap-4 pt-6 sm:pt-8 lg:pt-12">
               <div className="rounded-tr-2xl lg:rounded-tr-3xl overflow-hidden shadow-2xl relative flex-1 group z-0 bg-slate-800/50 transform-gpu">
                 <img 
-                  src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&h=600&q=80" 
+                  src="/AutoShine_Shampoo.webp" 
                   alt="Produk Auto Care" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
               </div>
               <div className="rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[70px] overflow-hidden shadow-2xl relative flex-1 group z-0 bg-slate-800/50 transform-gpu">
                 <img 
-                  src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80" 
+                  src="/SuperFloor.webp" 
                   alt="General Cleaning" 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
