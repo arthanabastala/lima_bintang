@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center group shrink-0">
           <img 
-            src="/logo.png" 
+            src="/logo.webp" 
             alt="Lima Bintang Logo" 
             className="h-8 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
           />
