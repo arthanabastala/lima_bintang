@@ -41,7 +41,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG CleanWash Powder",
       description: t("Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr."),
       price: "Rp 7.000 – 9.000 / pcs",
-      image: "/Cleanwash_powder.webp",
+      image: "/Cleanwash_Powder.webp",
     },
     {
       category: "Laundry Series",
@@ -58,7 +58,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG LuxPerfume Laundry",
       description: t("Parfum Laundry Premium – Harum mewah tahan lama. Per liter."),
       price: "Rp 25.000 – 35.000 / liter",
-      image: "/LuxParfume_Laundry.webp",
+      image: "/LuxPerfume_Laundry.webp",
     },
     {
       category: "Floor Care",
