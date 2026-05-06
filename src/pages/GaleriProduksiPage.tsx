@@ -4,12 +4,12 @@ import { useLanguage } from "../context/LanguageContext";
 export default function GaleriProduksiPage() {
   const { t } = useLanguage();
   const images = [
-    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", title: t("Proses Produksi") },
-    { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", title: t("Mesin Kemasan") },
-    { src: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80", title: t("Fasilitas Pabrik") },
-    { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80", title: t("Quality Control") },
-    { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80", title: t("Sistem Otomasi") },
-    { src: "https://images.unsplash.com/photo-1581092163190-0f411baed996?auto=format&fit=crop&w=800&q=80", title: t("Gudang Penyimpanan") },
+    { src: "/galeri4.webp", title: t("Proses Produksi") },
+    { src: "/galeri5.webp", title: t("Mesin Kemasan") },
+    // { src: "/galeri6.webp", title: t("Fasilitas Pabrik") },
+    { src: "/galeri7.webp", title: t("Quality Control") },
+    { src: "/galeri8.webp", title: t("Sistem Otomasi") },
+    { src: "/galeri6.webp", title: t("Gudang Penyimpanan") },
   ];
 
   return (
