@@ -45,38 +45,45 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative grid grid-cols-2 gap-3 sm:gap-4 aspect-square lg:aspect-[4/5] "
+            className="relative flex gap-3 sm:gap-4 aspect-square lg:aspect-[4/5]"
           >
-            <div className="rounded-tl-[3rem] sm:rounded-tl-[4rem] lg:rounded-tl-[70px] overflow-hidden shadow-2xl h-full">
+            {/* Left Column */}
+            <div className="flex flex-col flex-1 gap-3 sm:gap-4 pb-6 sm:pb-8 lg:pb-12">
+              <div className="rounded-tl-[3rem] sm:rounded-tl-[4rem] lg:rounded-tl-[70px] overflow-hidden shadow-2xl relative flex-1 group isolate bg-slate-800/50">
               <img 
                 src="/sabuncucipiring.png" 
                 alt="Produk Household" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              />
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+              </div>
+              <div className="rounded-bl-2xl lg:rounded-bl-3xl overflow-hidden shadow-2xl relative flex-1 group isolate bg-slate-800/50">
+                <img 
+                  src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80" 
+                  alt="Produk Pet Care" 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+              </div>
             </div>
-            <div className="rounded-tr-2xl lg:rounded-tr-3xl overflow-hidden shadow-2xl h-full mt-6 sm:mt-8 lg:mt-12">
+            
+            {/* Right Column */}
+            <div className="flex flex-col flex-1 gap-3 sm:gap-4 pt-6 sm:pt-8 lg:pt-12">
+              <div className="rounded-tr-2xl lg:rounded-tr-3xl overflow-hidden shadow-2xl relative flex-1 group isolate bg-slate-800/50">
               <img 
                 src="/AutoShine_Shampoo.png" 
                 alt="Produk Auto Care" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
               />
             </div>
-            <div className="rounded-bl-2xl lg:rounded-bl-3xl overflow-hidden shadow-2xl h-full -mt-6 sm:-mt-8 lg:-mt-12">
-              <img 
-                src="/PetCare_Shampoo.png" 
-                alt="Produk Pet Care" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[70px] overflow-hidden shadow-2xl h-full">
+            <div className="rounded-br-[3rem] sm:rounded-br-[4rem] lg:rounded-br-[70px] overflow-hidden shadow-2xl relative flex-1 group isolate bg-slate-800/50">
               <img 
                 src="/Karbol_Freshguard.jpeg" 
                 alt="General Cleaning" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
               />
+              </div>
             </div>
 
-            <div className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 glass-card p-6 lg:p-8 shadow-xl hidden sm:block border-l-4 border-yellow-500 z-10 bg-slate-900/90 backdrop-blur-md">
+            <div className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 glass-card p-6 lg:p-8 shadow-xl hidden sm:block border-l-4 border-yellow-500 z-20 bg-slate-900/90 backdrop-blur-md">
               <div className="text-3xl lg:text-4xl font-bold text-white mb-1">PRODUK</div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Kualitas Premium</div>
             </div>
