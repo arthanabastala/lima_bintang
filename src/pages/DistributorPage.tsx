@@ -101,7 +101,7 @@ export default function DistributorPage() {
               <h1 className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 <span>{t("Jadilah Distributor Utama")}</span>
                 <img 
-                  src="/logo.png" 
+                  src="/logo.webp" 
                   alt="Lima Bintang" 
                   className="h-10 md:h-12 lg:h-16 w-auto object-contain"
                 />
