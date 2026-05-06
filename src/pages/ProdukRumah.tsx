@@ -79,7 +79,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG Karbol FreshGuard",
       description: t("Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML."),
       price: "Rp 14.000 – 18.000 / pouch",
-      image: "/SuperFloor.webp",
+      image: "/Karbol_Freshguard.jpeg",
     },
     {
       category: "Personal Care",

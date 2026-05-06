@@ -10,7 +10,7 @@ export default function PetCare() {
     description: t("Shampoo hewan peliharaan dengan formula lembut khusus untuk kucing, anjing, dan hewan lainnya. Membersihkan kotoran dan bau, serta merawat bulu agar lembut dan berkilau."),
     price: "Rp 20.000 – 35.000",
     size: "1000ML",
-    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&h=600&q=80",
+    image: "/PetCare_Shampoo.webp",
     label: t("Baru")
   };
 
@@ -97,7 +97,7 @@ export default function PetCare() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-2">
                       <img 
-                        src="/logo.png" 
+                        src="/logo.webp" 
                         alt="LIMA BINTANG" 
                         className="h-6 sm:h-8 object-contain"
                       />

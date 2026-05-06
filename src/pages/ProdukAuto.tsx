@@ -11,28 +11,28 @@ export default function ProdukAuto() {
       description: t("Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
       label: t("Terlaris"),
-      image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/AutoShine_Shampoo.webp",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG TireGloss Pro",
       description: t("Semir Ban – Kilap hitam pekat, tahan cuaca, melindungi karet dari keretakan."),
       price: "Rp 20.000 – 30.000 / pcs",
-      image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/TireGlossPro.webp",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG GlassClear Pro",
       description: t("Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal."),
       price: "Rp 25.000 – 35.000 / pcs",
-      image: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG AutoPerfume Hanging",
       description: t("Parfum Gantung Mobil – Aroma tahan lama dengan desain elegan untuk kabin kendaraan."),
       price: "Rp 8.000 – 12.000 / pcs",
-      image: "https://images.unsplash.com/photo-1550505095-2ccdd20f31df?auto=format&fit=crop&w=600&h=600&q=80",
+      image: "/parfumeauto.webp",
     }
   ];
 
@@ -100,7 +100,7 @@ export default function ProdukAuto() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-1.5">
                       <img 
-                        src="/logo.png" 
+                        src="/logo.webp" 
                         alt="LIMA BINTANG" 
                         className="h-5 sm:h-6 object-contain"
                       />
