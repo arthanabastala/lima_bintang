@@ -25,67 +25,66 @@ export default function ProdukRumah() {
         { size: "110ML", price: "Rp 850", package: "(30 pouch/dus)" }
       ],
       label: "Best Seller",
-      image: "/sabuncucipiring.png",
-      
+      image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Liquid",
       description: "Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML.",
       price: "Rp 18.000 – 22.000 / pouch",
-      image: "/Cleanwash_Liquid.jpeg",
+      image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Powder",
       description: "Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr.",
       price: "Rp 7.000 – 9.000 / pcs",
-      image: "/Cleanwash_Powder.jpeg",
+      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Laundry Series",
-      name: "LIMA BINTANG SMOOTH CARE",
+      name: "LIMA BINTANG Smooth Care",
       description: "Pewangi & Pelicin Setrika – Pakaian lebih rapi, wangi tahan lama, mudah disetrika.",
       variants: [
         { size: "500ML", price: "Rp 12.000" },
         { size: "1000ML", price: "Rp 20.000" }
       ],
-      image: "/sampocare.jpeg",
+      image: "https://images.unsplash.com/photo-1583947581924-860bda6a5c1f?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
-      category: "LIMA BINTANG Laundry Series",
+      category: "Laundry Series",
       name: "LIMA BINTANG LuxPerfume Laundry",
       description: "Parfum Laundry Premium – Harum mewah tahan lama. Per liter.",
       price: "Rp 25.000 – 35.000 / liter",
-      image: "/LuxPerfume_Laundry.png",
+      image: "https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
-      category: "LIMA BINTANG Floor Care",
+      category: "Floor Care",
       name: "LIMA BINTANG SuperFloor",
       description: "Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML.",
       price: "Rp 16.000 – 20.000 / pouch",
-      image: "/SuperFloor.png",
+      image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Specialty",
-      name: "LIMA BINTANG X-CLEAN",
+      name: "LIMA BINTANG X-Clean",
       description: "Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML.",
       price: "Rp 18.000 – 25.000 / botol",
-      image: "/X-Clean.jpeg",
+      image: "https://images.unsplash.com/photo-1584949514120-f10f2756d11f?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Disinfectant",
       name: "LIMA BINTANG Karbol FreshGuard",
       description: "Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML.",
       price: "Rp 14.000 – 18.000 / pouch",
-      image: "/Karbol_Freshguard.jpeg",
+      image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Personal Care",
       name: "LIMA BINTANG BodyFresh Liquid Soap",
       description: "Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML.",
       price: "Rp 18.000 – 25.000 / pouch",
-      image: "/BodyFresh_Liquid_Soap.png",
+      image: "https://images.unsplash.com/photo-1556228578-8d890c2827c1?auto=format&fit=crop&w=600&h=600&q=80",
     }
   ];
 
@@ -175,7 +174,7 @@ export default function ProdukRumah() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-1.5">
                       <img 
-                        src="logo.png" 
+                        src="/logo.png" 
                         alt="LIMA BINTANG" 
                         className="h-5 sm:h-6 object-contain"
                       />

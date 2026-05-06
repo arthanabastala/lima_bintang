@@ -115,7 +115,7 @@ export default function OemPage() {
               className="h-full w-full"
              >
                <img 
-                 src="/branda.png" 
+                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" 
                  alt="Factory Production" 
                  className="w-full h-full object-cover lg:rounded-l-3xl shadow-2xl"
                />
@@ -204,7 +204,7 @@ export default function OemPage() {
       {/* Section 3: Product Categories for OEM */}
       <section className="py-16 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
         <div className="bg-gradient-to-br from-blue-900/40 to-slate-900 border border-blue-500/20 rounded-3xl p-10 lg:p-16 relative overflow-hidden text-white shadow-2xl">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80')] opacity-5 mix-blend-overlay bg-cover bg-center"></div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80')] opacity-5 mix-blend-overlay bg-cover bg-center"></div>
           <div className="relative z-10">
             <motion.div
                initial={{ opacity: 0, y: 20 }}

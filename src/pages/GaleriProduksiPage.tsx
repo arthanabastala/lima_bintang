@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 
 export default function GaleriProduksiPage() {
   const images = [
-    { src: "galeri4.png", title: "Proses Produksi" },
-    { src: "galeri5.png", title: "Mesin Kemasan" },
-    { src: "galeri6.png", title: "Fasilitas Pabrik" },
-    { src: "galeri7.png", title: "Quality Control" },
-    { src: "galeri8.png", title: "Sistem Otomasi" },
-    { src: "galeri9.png", title: "Gudang Penyimpanan" },
+    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", title: "Proses Produksi" },
+    { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", title: "Mesin Kemasan" },
+    { src: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80", title: "Fasilitas Pabrik" },
+    { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80", title: "Quality Control" },
+    { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80", title: "Sistem Otomasi" },
+    { src: "https://images.unsplash.com/photo-1581092163190-0f411baed996?auto=format&fit=crop&w=800&q=80", title: "Gudang Penyimpanan" },
   ];
 
   return (
@@ -92,6 +92,9 @@ export default function GaleriProduksiPage() {
         >
           <h2 className="text-3xl font-bold text-white mb-6">Artikel Produksi Pouch</h2>
           <div className="text-slate-300 leading-relaxed space-y-6">
+            <p>
+              [Silakan masukkan konten artikel pembuatan pouch yang Anda siapkan di sini. Paragraf ini merupakah placeholder.]
+            </p>
             <p>
               Proses pembuatan standing pouch di LIMA BINTANG Home Care dilakukan dengan presisi dan standar kualitas tinggi. Kami menggunakan sistem otomatisasi untuk memastikan keamanan produk dan higienitas kemasan. Standar kontrol kualitas (Quality Control) kami dirancang untuk mencegah kebocoran, memastikan segel kuat, dan kualitas cetakan kemasan yang konsisten.
             </p>

@@ -12,7 +12,7 @@ export default function Portfolio() {
       price: "Mulai Rp 650 / pouch",
       label: "Fast Moving",
       labelColor: "text-blue-400 bg-blue-500/20 border-blue-500/30",
-      image: "/sabuncucipiring.png",
+      image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
       link: "/produk-rumah"
     },
     {
@@ -23,7 +23,7 @@ export default function Portfolio() {
       price: "Mulai Rp 7.000",
       label: "Best Seller",
       labelColor: "text-yellow-400 bg-yellow-500/20 border-yellow-500/30",
-      image: "/Cleanwash_Liquid.jpeg",
+      image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
       link: "/produk-rumah"
     },
     {
@@ -32,7 +32,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG AutoShine",
       description: "Shampoo Mobil & Motor Premium",
       price: "Mulai Rp 18.000 / 1000ML",
-      image: "/AutoShine_Shampoo.png",
+      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
       link: "/produk-auto"
     },
     {
@@ -41,7 +41,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG PetCare",
       description: "Shampoo Hewan Peliharaan",
       price: "Mulai Rp 20.000 / 1000ML",
-      image: "PetCare_Shampoo.png",
+      image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&h=600&q=80",
       link: "/pet-care"
     }
   ];
@@ -106,7 +106,7 @@ export default function Portfolio() {
                       {product.title.includes("LIMA BINTANG") ? (
                         <span className="flex items-center flex-wrap gap-1.5 leading-tight">
                           <img 
-                            src="logo.png" 
+                            src="/logo.png" 
                             alt="LIMA BINTANG" 
                             className="h-4 sm:h-5 object-contain inline-block -mt-1"
                           />
