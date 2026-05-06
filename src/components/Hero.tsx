@@ -37,11 +37,11 @@ export default function Hero() {
             <img src="/tutelage-logo.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
             PT. Tutelage Sdn Bhd Indonesia
           </div>
-          <h1 className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-2 mb-4 sm:mb-6 mt-2">
+          <h1 className="flex flex-col items-center justify-center gap-y-4 sm:gap-y-6 mb-6 mt-2">
             <img 
               src="logo.png" 
               alt="Lima Bintang" 
-              className="h-10 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
+              className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto object-contain"
             />
             <span className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-500 tracking-tight">Home Care</span>
           </h1>
