@@ -6,10 +6,10 @@ export default function GaleriProduksiPage() {
   const images = [
     { src: "/galeri4.webp", title: t("Proses Produksi") },
     { src: "/galeri5.webp", title: t("Mesin Kemasan") },
-    // { src: "/galeri6.webp", title: t("Fasilitas Pabrik") },
+    { src: "/galeri6.webp", title: t("Fasilitas Pabrik") },
     { src: "/galeri7.webp", title: t("Quality Control") },
     { src: "/galeri8.webp", title: t("Sistem Otomasi") },
-    { src: "/galeri6.webp", title: t("Gudang Penyimpanan") },
+    { src: "/galeri9.png", title: t("Gudang Penyimpanan") },
   ];
 
   return (
