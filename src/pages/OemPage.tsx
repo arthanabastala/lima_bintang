@@ -115,7 +115,7 @@ export default function OemPage() {
               className="h-full w-full"
              >
                <img 
-                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80" 
+                 src="/branda.png" 
                  alt="Factory Production" 
                  className="w-full h-full object-cover lg:rounded-l-3xl shadow-2xl"
                />
