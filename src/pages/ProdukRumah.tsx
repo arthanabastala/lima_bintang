@@ -34,7 +34,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG CleanWash Liquid",
       description: t("Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML."),
       price: "Rp 18.000 – 22.000 / pouch",
-      image: "Cleanwash_Liquid.webp",
+      image: "/Cleanwash_Liquid.webp",
     },
     {
       category: "Laundry Series",
@@ -58,7 +58,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG LuxPerfume Laundry",
       description: t("Parfum Laundry Premium – Harum mewah tahan lama. Per liter."),
       price: "Rp 25.000 – 35.000 / liter",
-      image: "LuxParfume_Laundry.webp",
+      image: "/LuxParfume_Laundry.webp",
     },
     {
       category: "Floor Care",
@@ -86,7 +86,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG BodyFresh Liquid Soap",
       description: t("Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
-      image: "BodyFresh_Liquid_Soap.webp",
+      image: "/BodyFresh_Liquid_Soap.webp",
     }
   ];
 
