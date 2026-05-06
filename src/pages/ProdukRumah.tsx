@@ -75,12 +75,12 @@ export default function ProdukRumah() {
       image: "/X-Clean.webp",
     },
     {
-    //   category: "Disinfectant",
-    //   name: "LIMA BINTANG Karbol FreshGuard",
-    //   description: t("Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML."),
-    //   price: "Rp 14.000 – 18.000 / pouch",
-    //   image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
-    // },
+      category: "Disinfectant",
+      name: "LIMA BINTANG Karbol FreshGuard",
+      description: t("Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML."),
+      price: "Rp 14.000 – 18.000 / pouch",
+      image: "/SuperFloor.webp",
+    },
     {
       category: "Personal Care",
       name: "LIMA BINTANG BodyFresh Liquid Soap",
@@ -176,7 +176,7 @@ export default function ProdukRumah() {
                   {product.name.includes("LIMA BINTANG") ? (
                     <span className="flex items-center flex-wrap gap-1.5">
                       <img 
-                        src="/logo.png" 
+                        src="/logo.webp" 
                         alt="LIMA BINTANG" 
                         className="h-5 sm:h-6 object-contain"
                       />
