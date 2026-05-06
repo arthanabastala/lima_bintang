@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="col-span-2">
              <Link to="/" className="flex items-center mb-4 group">
               <img 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="Lima Bintang Logo" 
                 className="h-8 max-w-[200px] object-contain transition-transform group-hover:scale-105"
               />
