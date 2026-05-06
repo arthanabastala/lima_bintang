@@ -10,7 +10,7 @@ export default function GaleriPage() {
     { src: "/AutoShine_Shampoo.webp", title: t("Shampoo Auto") },
     { src: "/sampocare.webp", title: t("Pelicin Serbaguna") },
     { src: "/PetCare_Shampoo.webp", title: t("Pet Care") },
-    { src: "//GlassClearPro.png.webp", title: t("Pembersih Kaca") },
+    { src: "/GlassClearPro.png", title: t("Pembersih Kaca") },
   ];
 
   return (
