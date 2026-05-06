@@ -1,4 +1,8 @@
+import { useLanguage } from "../context/LanguageContext";
+
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-slate-900/50 backdrop-blur-md border-t border-white/5 text-white py-12 relative z-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -6,28 +10,28 @@ export default function Footer() {
           <div className="col-span-2">
              <a href="/" className="flex items-center mb-4 group">
               <img 
-                src="logo.png" 
+                src="/logo.png" 
                 alt="Lima Bintang Logo" 
                 className="h-8 max-w-[200px] object-contain transition-transform group-hover:scale-105"
               />
             </a>
             <p className="text-slate-400 text-sm max-w-sm">
-              Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia.
+              {t("Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia.")}
             </p>
           </div>
           <div>
             <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">Company</h5>
             <ul className="space-y-2">
-              <li><a href="/#about" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">Profil Perusahaan</a></li>
-              <li><a href="/#services" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">Mengapa Kami</a></li>
-              <li><a href="/#products" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">Portofolio Produk</a></li>
+              <li><a href="/#about" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Profil Perusahaan")}</a></li>
+              <li><a href="/#services" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Mengapa Kami.")}</a></li>
+              <li><a href="/#products" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Portofolio Produk")}</a></li>
             </ul>
           </div>
           <div>
             <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">Bantuan</h5>
             <ul className="space-y-2">
               <li><a href="/faq" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">FAQ</a></li>
-              <li><a href="/contact" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">Kontak</a></li>
+              <li><a href="/contact" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Kontak")}</a></li>
             </ul>
           </div>
         </div>

@@ -1,37 +1,40 @@
 import { motion } from "motion/react";
 import { Factory, Award, RefreshCcw, Package, Handshake, Tags } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Services() {
+  const { t } = useLanguage();
+
   const services = [
     {
       icon: <Factory strokeWidth={1.5} className="w-8 h-8" />,
-      title: "Diproduksi Sendiri",
-      desc: "Semua produk LIMA BINTANG diproduksi langsung di pabrik kami di Bogor, Jawa Barat. Kualitas terkontrol dari bahan baku hingga kemasan akhir."
+      title: t("Diproduksi Sendiri"),
+      desc: t("Semua produk LIMA BINTANG diproduksi langsung di pabrik kami di Bogor, Jawa Barat. Kualitas terkontrol dari bahan baku hingga kemasan akhir.")
     },
     {
       icon: <Award strokeWidth={1.5} className="w-8 h-8" />,
-      title: "Kualitas Premium",
-      desc: "Formula terstandarisasi menggunakan bahan berkualitas tinggi, menghasilkan produk yang efektif, aman, dan beraroma segar tahan lama."
+      title: t("Kualitas Premium"),
+      desc: t("Formula terstandarisasi menggunakan bahan berkualitas tinggi, menghasilkan produk yang efektif, aman, dan beraroma segar tahan lama.")
     },
     {
       icon: <RefreshCcw strokeWidth={1.5} className="w-8 h-8" />,
-      title: "Repeat Order Tinggi",
-      desc: "Produk kebutuhan sehari-hari dengan perputaran cepat — ideal sebagai bisnis distribusi dengan cashflow yang stabil dan konsisten."
+      title: t("Repeat Order Tinggi"),
+      desc: t("Produk kebutuhan sehari-hari dengan perputaran cepat — ideal sebagai bisnis distribusi dengan cashflow yang stabil dan konsisten.")
     },
     {
       icon: <Package strokeWidth={1.5} className="w-8 h-8" />,
-      title: "Lini Produk Lengkap",
-      desc: "Dari sabun cuci piring, deterjen, pembersih lantai, hingga shampoo mobil dan perawatan hewan — satu brand, solusi lengkap."
+      title: t("Lini Produk Lengkap"),
+      desc: t("Dari sabun cuci piring, deterjen, pembersih lantai, hingga shampoo mobil dan perawatan hewan — satu brand, solusi lengkap.")
     },
     {
       icon: <Handshake strokeWidth={1.5} className="w-8 h-8" />,
-      title: "Kerjasama Eksklusif",
-      desc: "Sistem 1 Distributor Utama per wilayah memberikan keunggulan kompetitif nyata bagi mitra kami. Wilayah Anda, peluang Anda."
+      title: t("Kerjasama Eksklusif"),
+      desc: t("Sistem 1 Distributor Utama per wilayah memberikan keunggulan kompetitif nyata bagi mitra kami. Wilayah Anda, peluang Anda.")
     },
     {
       icon: <Tags strokeWidth={1.5} className="w-8 h-8" />,
-      title: "OEM / Private Label",
-      desc: "Tersedia layanan maklon dan private label. Jadikan produk kami sebagai brand Anda sendiri dengan formula yang telah terbukti."
+      title: t("OEM / Private Label"),
+      desc: t("Tersedia layanan maklon dan private label. Jadikan produk kami sebagai brand Anda sendiri dengan formula yang telah terbukti.")
     }
   ];
 
@@ -66,13 +69,13 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h4 className="text-yellow-500 font-bold uppercase tracking-wider text-sm mb-3">
-              Mengapa Kami.
+              {t("Mengapa Kami.")}
             </h4>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Pilihan Cerdas untuk Bisnis & Rumah Tangga Anda
+              {t("Pilihan Cerdas untuk Bisnis & Rumah Tangga Anda")}
             </h2>
             <p className="text-slate-400 text-lg">
-              Produsen produk kebersihan dan perawatan yang berkomitmen menghadirkan kualitas bintang lima untuk setiap rumah tangga Indonesia.
+              {t("Produsen produk kebersihan dan perawatan yang berkomitmen menghadirkan kualitas bintang lima untuk setiap rumah tangga Indonesia.")}
             </p>
           </motion.div>
         </div>

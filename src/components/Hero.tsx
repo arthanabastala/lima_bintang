@@ -1,7 +1,10 @@
 import { motion } from "motion/react";
 import { ArrowRight, Star } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24">
       {/* Background Video */}
@@ -34,16 +37,16 @@ export default function Hero() {
             ))}
           </div>
           <div className="flex flex-col items-center justify-center text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-4 sm:px-6 py-2 sm:py-3 gap-2">
-            <img src="/logo_perusahaan.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
+            <img src="/tutelage-logo.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
             PT. Tutelage Sdn Bhd Indonesia
           </div>
           <h1 className="flex flex-col items-center justify-center gap-y-4 sm:gap-y-6 mb-6 mt-2">
             <img 
-              src="logo.png" 
+              src="/logo.png" 
               alt="Lima Bintang" 
               className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto object-contain"
             />
-            <span className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-500 tracking-tight">Home Care</span>
+            <span className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-500 tracking-tight">{t("Home Care")}</span>
           </h1>
         </motion.div>
 
@@ -53,7 +56,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-            Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia. Bersih lebih bersih, segar lebih lama.
+            {t("Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia. Bersih lebih bersih, segar lebih lama.")}
           </p>
         </motion.div>
 
@@ -64,11 +67,11 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center w-full"
         >
           <a href="#contact" className="group flex items-center justify-center glass-card hover:bg-white/5 text-white font-semibold px-8 py-4 transition-all duration-300">
-            Get Started
+            {t("Get Started")}
             <ArrowRight strokeWidth={1.5} className="ml-2 w-5 h-5 text-yellow-500 group-hover:translate-x-1 duration-300" />
           </a>
           <a href="#about" className="flex items-center justify-center glass-card border border-white/20 text-white font-semibold px-8 py-4 hover:bg-white/10 transition-colors duration-300">
-            Discover More
+            {t("Discover More")}
           </a>
         </motion.div>
       </div>
