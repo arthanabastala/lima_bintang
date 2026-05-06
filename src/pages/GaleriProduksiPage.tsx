@@ -29,10 +29,10 @@ export default function GaleriProduksiPage() {
   ];
 
   const videos = [
-    { src: "", title: t("Video Proses Produksi 1"), desc: t("/1.mp4") },
-    { src: "", title: t("Video Proses Produksi 2"), desc: t("/2.mp4") },
-    { src: "", title: t("Video Proses Produksi 3"), desc: t("/3.mp4") },
-    { src: "", title: t("Video Proses Produksi 4"), desc: t("/4.mp4") },
+    { src: "/1.mp4", title: t("Video Proses Produksi 1"), },
+    { src: "/2.mp4", title: t("Video Proses Produksi 2"), },
+    { src: "/3.mp4", title: t("Video Proses Produksi 3"), },
+    { src: "/4.mp4", title: t("Video Proses Produksi 4"), },
   ];
 
   return (
