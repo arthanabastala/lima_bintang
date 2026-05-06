@@ -34,7 +34,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="flex flex-col items-center justify-center text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-4 sm:px-6 py-2 sm:py-3 gap-2">
-            <img src="/tutelage-logo.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
+            <img src="/logo_perusahaan.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
             PT. Tutelage Sdn Bhd Indonesia
           </div>
           <h1 className="flex flex-col items-center justify-center gap-y-4 sm:gap-y-6 mb-6 mt-2">
