@@ -108,7 +108,7 @@ export default function Portfolio() {
                       {product.title.includes("LIMA BINTANG") ? (
                         <span className="flex items-center flex-wrap gap-1.5 leading-tight">
                           <img 
-                            src="/logo.png" 
+                            src="/logo.webp" 
                             alt="LIMA BINTANG" 
                             className="h-4 sm:h-5 object-contain inline-block -mt-1"
                           />
