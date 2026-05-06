@@ -1,34 +1,36 @@
 import { motion } from "motion/react";
 import { ShoppingCart, Car, Sparkles } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function ProdukAuto() {
+  const { t } = useLanguage();
   const products = [
     {
       category: "Automotive Series",
       name: "LIMA BINTANG AutoShine Shampoo",
-      description: "Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML.",
+      description: t("Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
-      label: "Terlaris",
+      label: t("Terlaris"),
       image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG TireGloss Pro",
-      description: "Semir Ban – Kilap hitam pekat, tahan cuaca, melindungi karet dari keretakan.",
+      description: t("Semir Ban – Kilap hitam pekat, tahan cuaca, melindungi karet dari keretakan."),
       price: "Rp 20.000 – 30.000 / pcs",
       image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG GlassClear Pro",
-      description: "Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal.",
+      description: t("Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal."),
       price: "Rp 25.000 – 35.000 / pcs",
       image: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG AutoPerfume Hanging",
-      description: "Parfum Gantung Mobil – Aroma tahan lama dengan desain elegan untuk kabin kendaraan.",
+      description: t("Parfum Gantung Mobil – Aroma tahan lama dengan desain elegan untuk kabin kendaraan."),
       price: "Rp 8.000 – 12.000 / pcs",
       image: "https://images.unsplash.com/photo-1550505095-2ccdd20f31df?auto=format&fit=crop&w=600&h=600&q=80",
     }
@@ -46,13 +48,13 @@ export default function ProdukAuto() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Automotive & Specialty Series
+              {t("Automotive & Specialty Series")}
             </h1>
             <p className="text-xl text-yellow-500 font-medium mb-6 tracking-wide">
-              Produk Perawatan Kendaraan
+              {t("Produk Perawatan Kendaraan")}
             </p>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Formulasi khusus untuk menjaga kendaraan Anda tetap bersih, mengkilap, dan terawat. Premium untuk mobil dan motor Anda.
+              {t("Formulasi khusus untuk menjaga kendaraan Anda tetap bersih, mengkilap, dan terawat. Premium untuk mobil dan motor Anda.")}
             </p>
           </motion.div>
         </div>
@@ -116,7 +118,7 @@ export default function ProdukAuto() {
                     <div className="flex justify-between items-end gap-2">
                       <div>
                         <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1 focus:outline-none">
-                          Harga Mulai
+                          {t("Harga Mulai")}
                         </div>
                         <span className="text-lg font-bold text-yellow-500 block leading-none">{product.price}</span>
                       </div>
@@ -144,15 +146,15 @@ export default function ProdukAuto() {
               <Sparkles className="w-6 h-6 text-yellow-500" />
             </div>
             <div>
-              <h4 className="text-white font-bold text-lg mb-1">Available for Wholesale & Distributor</h4>
+              <h4 className="text-white font-bold text-lg mb-1">{t("Tersedia untuk Agen & Distributor")}</h4>
               <p className="text-slate-400 text-sm leading-relaxed max-w-2xl">
-                Prices are ex-factory. MOQ and special discounts available for bulk orders. Contact us for distributor pricing.
+                {t("Harga tertera adalah harga retail/ex-factory. MOQ khusus dan diskon tersedia untuk pembelian grosir. Hubungi kami untuk detail harga distributor.")}
               </p>
             </div>
           </div>
           <div className="relative z-10 shrink-0">
             <a href="/#contact" className="px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold rounded-full text-sm transition-colors whitespace-nowrap block">
-              Contact Us
+              {t("Contact Us")}
             </a>
           </div>
         </div>

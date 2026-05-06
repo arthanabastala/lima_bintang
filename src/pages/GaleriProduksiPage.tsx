@@ -1,13 +1,15 @@
 import { motion } from "motion/react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function GaleriProduksiPage() {
+  const { t } = useLanguage();
   const images = [
-    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", title: "Proses Produksi" },
-    { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", title: "Mesin Kemasan" },
-    { src: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80", title: "Fasilitas Pabrik" },
-    { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80", title: "Quality Control" },
-    { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80", title: "Sistem Otomasi" },
-    { src: "https://images.unsplash.com/photo-1581092163190-0f411baed996?auto=format&fit=crop&w=800&q=80", title: "Gudang Penyimpanan" },
+    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", title: t("Proses Produksi") },
+    { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", title: t("Mesin Kemasan") },
+    { src: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80", title: t("Fasilitas Pabrik") },
+    { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80", title: t("Quality Control") },
+    { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80", title: t("Sistem Otomasi") },
+    { src: "https://images.unsplash.com/photo-1581092163190-0f411baed996?auto=format&fit=crop&w=800&q=80", title: t("Gudang Penyimpanan") },
   ];
 
   return (
@@ -20,9 +22,9 @@ export default function GaleriProduksiPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Pembuatan Standing Pouch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">{t("Pembuatan Standing Pouch")}</h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-6">
-              Proses produksi kemasan berkualitas di pabrik kami
+              {t("Proses produksi kemasan berkualitas di pabrik kami")}
             </p>
           </motion.div>
         </div>
@@ -39,8 +41,8 @@ export default function GaleriProduksiPage() {
         >
           {/* Placeholder for embedded video */}
           <div className="text-center">
-            <p className="text-slate-400 mb-2">[Area untuk Video / Embed URL]</p>
-            <p className="text-slate-500 text-sm italic">Silakan unggah atau embed video produksi pouch di sini</p>
+            <p className="text-slate-400 mb-2">{t("[Area untuk Video / Embed URL]")}</p>
+            <p className="text-slate-500 text-sm italic">{t("Silakan unggah atau embed video produksi pouch di sini")}</p>
           </div>
         </motion.div>
       </section>
@@ -54,7 +56,7 @@ export default function GaleriProduksiPage() {
           transition={{ duration: 0.6 }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">Galeri Foto Pabrik</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">{t("Galeri Foto Pabrik")}</h2>
           <div className="w-16 h-1 bg-yellow-500 rounded-full"></div>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -90,16 +92,16 @@ export default function GaleriProduksiPage() {
           transition={{ duration: 0.6 }}
           className="bg-slate-900/50 border border-white/5 rounded-3xl p-8 lg:p-12 shadow-xl prose prose-invert prose-slate max-w-none"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">Artikel Produksi Pouch</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">{t("Artikel Produksi Pouch")}</h2>
           <div className="text-slate-300 leading-relaxed space-y-6">
             <p>
-              [Silakan masukkan konten artikel pembuatan pouch yang Anda siapkan di sini. Paragraf ini merupakah placeholder.]
+              {t("[Silakan masukkan konten artikel pembuatan pouch yang Anda siapkan di sini. Paragraf ini merupakah placeholder.]")}
             </p>
             <p>
-              Proses pembuatan standing pouch di LIMA BINTANG Home Care dilakukan dengan presisi dan standar kualitas tinggi. Kami menggunakan sistem otomatisasi untuk memastikan keamanan produk dan higienitas kemasan. Standar kontrol kualitas (Quality Control) kami dirancang untuk mencegah kebocoran, memastikan segel kuat, dan kualitas cetakan kemasan yang konsisten.
+              {t("Proses pembuatan standing pouch di LIMA BINTANG Home Care dilakukan dengan presisi dan standar kualitas tinggi. Kami menggunakan sistem otomatisasi untuk memastikan keamanan produk dan higienitas kemasan. Standar kontrol kualitas (Quality Control) kami dirancang untuk mencegah kebocoran, memastikan segel kuat, dan kualitas cetakan kemasan yang konsisten.")}
             </p>
             <p>
-              Keunggulan fasilitas pabrik kami memberikan fleksibilitas bagi para pelaku industri dan maklon untuk memproduksi produk kebersihan dan perawatan rumah dengan brand mereka sendiri.
+              {t("Keunggulan fasilitas pabrik kami memberikan fleksibilitas bagi para pelaku industri dan maklon untuk memproduksi produk kebersihan dan perawatan rumah dengan brand mereka sendiri.")}
             </p>
           </div>
         </motion.div>

@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
 import { Utensils, Shirt, Car, PawPrint } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Portfolio() {
+  const { t } = useLanguage();
   const products = [
     {
       category: "Household Series",
@@ -58,10 +60,10 @@ export default function Portfolio() {
             className="max-w-2xl"
           >
             <h4 className="text-yellow-500 font-bold uppercase tracking-wider text-sm mb-3">
-              Portofolio Produk
+              {t("Portofolio Produk")}
             </h4>
             <h2 className="text-3xl md:text-5xl font-bold text-white">
-              Rangkaian Produk Unggulan
+              {t("Rangkaian Produk Unggulan")}
             </h2>
           </motion.div>
         </div>
@@ -127,7 +129,7 @@ export default function Portfolio() {
 
                 <div className="pt-5 border-t border-white/10 mt-auto">
                   <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5">
-                    Harga Mulai
+                    {t("Harga Mulai")}
                   </div>
                   <div className="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors duration-300">
                     {product.price.replace("Mulai ", "")}

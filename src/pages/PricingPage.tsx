@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import { Info, CheckCircle2, TrendingDown, Crown, ShieldCheck } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function PricingPage() {
+  const { t } = useLanguage();
   const tableData = [
     {
       category: "A. Dishwash Series – Fast Moving",
@@ -70,10 +72,10 @@ export default function PricingPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-              Harga & Price List
+              {t("Harga & Price List")}
             </h1>
             <p className="text-xl text-yellow-500 font-medium tracking-wide flex items-center justify-center gap-2">
-              Daftar Harga Produk 
+              {t("Daftar Harga Produk")} 
               <img 
                 src="/logo.png" 
                 alt="Lima Bintang" 

@@ -15,69 +15,71 @@ import {
   AlertTriangle,
   ArrowRight
 } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function DistributorPage() {
+  const { t } = useLanguage();
   const potentials = [
     {
       icon: <Calendar className="w-8 h-8 text-blue-400" />,
-      title: "Digunakan Setiap Hari",
-      desc: "Produk kebutuhan rumah tangga seperti sabun, deterjen, dan pembersih digunakan setiap hari. Demand stabil sepanjang tahun dan tidak terpengaruh tren."
+      title: t("Digunakan Setiap Hari"),
+      desc: t("Produk kebutuhan rumah tangga seperti sabun, deterjen, dan pembersih digunakan setiap hari. Demand stabil sepanjang tahun dan tidak terpengaruh tren.")
     },
     {
       icon: <RotateCcw className="w-8 h-8 text-green-400" />,
-      title: "Repeat Order Tinggi",
-      desc: "Pelanggan yang puas akan terus membeli ulang, menciptakan cashflow yang konsisten dan dapat diprediksi."
+      title: t("Repeat Order Tinggi"),
+      desc: t("Pelanggan yang puas akan terus membeli ulang, menciptakan cashflow yang konsisten dan dapat diprediksi.")
     },
     {
       icon: <Rocket className="w-8 h-8 text-yellow-400" />,
-      title: "Perputaran Cepat & Stabil",
-      desc: "Produk fast moving dengan rotasi tinggi, cocok untuk bisnis berbasis volume dan pengembangan sub-distributor."
+      title: t("Perputaran Cepat & Stabil"),
+      desc: t("Produk fast moving dengan rotasi tinggi, cocok untuk bisnis berbasis volume dan pengembangan sub-distributor.")
     }
   ];
 
   const schemas = [
     {
       icon: <CheckCircle2 className="w-6 h-6 text-yellow-500" />,
-      title: "1 Distributor Utama per Wilayah",
-      desc: "Wilayah distribusi dikunci eksklusif, tidak ada kompetitor internal."
+      title: t("1 Distributor Utama per Wilayah"),
+      desc: t("Wilayah distribusi dikunci eksklusif, tidak ada kompetitor internal.")
     },
     {
       icon: <Package className="w-6 h-6 text-yellow-500" />,
-      title: "Prioritas Supply & Support",
-      desc: "Distributor utama mendapat prioritas pengiriman dan dukungan pengembangan area."
+      title: t("Prioritas Supply & Support"),
+      desc: t("Distributor utama mendapat prioritas pengiriman dan dukungan pengembangan area.")
     },
     {
       icon: <Network className="w-6 h-6 text-yellow-500" />,
-      title: "Potensi Sub-Distributor",
-      desc: "Kesempatan membangun jaringan distribusi di berbagai kota dalam wilayah."
+      title: t("Potensi Sub-Distributor"),
+      desc: t("Kesempatan membangun jaringan distribusi di berbagai kota dalam wilayah.")
     },
     {
       icon: <BadgeDollarSign className="w-6 h-6 text-yellow-500" />,
-      title: "Bulk Pricing & Special Scheme",
-      desc: "Harga khusus distributor dan skema pembelian volume besar yang kompetitif."
+      title: t("Bulk Pricing & Special Scheme"),
+      desc: t("Harga khusus distributor dan skema pembelian volume besar yang kompetitif.")
     }
   ];
 
   const steps = [
     {
       icon: <MessageCircle className="w-6 h-6 text-white" />,
-      title: "Konfirmasi Minat Kerjasama",
-      desc: "Hubungi via WhatsApp/email untuk mulai proses."
+      title: t("Konfirmasi Minat Kerjasama"),
+      desc: t("Hubungi via WhatsApp/email untuk mulai proses.")
     },
     {
       icon: <MapPin className="w-6 h-6 text-white" />,
-      title: "Tentukan Wilayah Distribusi",
-      desc: "Pilih wilayah yang ingin dikelola dan cek ketersediaan."
+      title: t("Tentukan Wilayah Distribusi"),
+      desc: t("Pilih wilayah yang ingin dikelola dan cek ketersediaan.")
     },
     {
       icon: <FlaskConical className="w-6 h-6 text-white" />,
-      title: "Pengiriman Sample Produk",
-      desc: "Uji kualitas produk sebelum komitmen."
+      title: t("Pengiriman Sample Produk"),
+      desc: t("Uji kualitas produk sebelum komitmen.")
     },
     {
       icon: <FileSignature className="w-6 h-6 text-white" />,
-      title: "Finalisasi Kerjasama",
-      desc: "Tanda tangan perjanjian, lakukan order awal, dan mulai distribusi."
+      title: t("Finalisasi Kerjasama"),
+      desc: t("Tanda tangan perjanjian, lakukan order awal, dan mulai distribusi.")
     }
   ];
 
@@ -94,10 +96,10 @@ export default function DistributorPage() {
               transition={{ duration: 0.6 }}
             >
               <div className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">
-                Kerjasama Distribusi Eksklusif Nasional
+                {t("Kerjasama Distribusi Eksklusif Nasional")}
               </div>
               <h1 className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-                <span>Jadilah Distributor Utama</span>
+                <span>{t("Jadilah Distributor Utama")}</span>
                 <img 
                   src="/logo.png" 
                   alt="Lima Bintang" 
@@ -105,14 +107,14 @@ export default function DistributorPage() {
                 />
               </h1>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                Program distribusi eksklusif dengan sistem 1 distributor per wilayah. Bisnis jangka panjang dengan cashflow stabil dan margin kompetitif.
+                {t("Program distribusi eksklusif dengan sistem 1 distributor per wilayah. Bisnis jangka panjang dengan cashflow stabil dan margin kompetitif.")}
               </p>
               <a 
                 href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20mendaftar%20sebagai%20Distributor.`}
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1"
               >
-                Gabung Sekarang <ArrowRight className="w-5 h-5" />
+                {t("Gabung Sekarang")} <ArrowRight className="w-5 h-5" />
               </a>
             </motion.div>
           </div>
@@ -143,7 +145,7 @@ export default function DistributorPage() {
            transition={{ duration: 0.5 }}
            className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Mengapa Bisnis Ini Menguntungkan?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Mengapa Bisnis Ini Menguntungkan?")}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </motion.div>
         
@@ -177,7 +179,7 @@ export default function DistributorPage() {
              transition={{ duration: 0.5 }}
              className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Skema Distribusi Eksklusif</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Skema Distribusi Eksklusif")}</h2>
             <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
           </motion.div>
 
@@ -213,7 +215,7 @@ export default function DistributorPage() {
            transition={{ duration: 0.5 }}
            className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Langkah Bergabung</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Langkah Bergabung")}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -265,7 +267,7 @@ export default function DistributorPage() {
             </div>
             
             <p className="text-lg md:text-xl text-yellow-100 font-medium leading-relaxed max-w-3xl mx-auto mb-10 p-6 bg-white/5 border border-white/10 rounded-2xl italic">
-              "⚠️ Perhatian: Wilayah distribusi terbatas dan langsung dikunci untuk mitra yang lebih siap. Tidak ada sistem booking tanpa komitmen awal. Segera hubungi kami sebelum wilayah Anda diambil."
+              {t('⚠️ Perhatian: Wilayah distribusi terbatas dan langsung dikunci untuk mitra yang lebih siap. Tidak ada sistem booking tanpa komitmen awal. Segera hubungi kami sebelum wilayah Anda diambil.')}
             </p>
             
             <a 
@@ -273,7 +275,7 @@ export default function DistributorPage() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base transition-all shadow-xl shadow-red-500/20 hover:shadow-red-500/40 hover:-translate-y-1 text-center max-w-[280px] sm:max-w-none mx-auto leading-tight"
             >
-              <span>Hubungi Sekarang / Ajukan Kerjasama</span>
+              <span>{t("Hubungi Sekarang / Ajukan Kerjasama")}</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </a>
           </div>

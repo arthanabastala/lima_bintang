@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">Company</h5>
+            <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">{t("Company")}</h5>
             <ul className="space-y-2">
               <li><a href="/#about" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Profil Perusahaan")}</a></li>
               <li><a href="/#services" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Mengapa Kami.")}</a></li>
@@ -28,7 +28,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">Bantuan</h5>
+            <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">{t("Bantuan")}</h5>
             <ul className="space-y-2">
               <li><a href="/faq" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">FAQ</a></li>
               <li><a href="/contact" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Kontak")}</a></li>

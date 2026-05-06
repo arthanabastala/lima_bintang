@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { useState, FormEvent } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,10 +30,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-              Mulai Kerjasama Dengan Kami
+              {t("Mulai Kerjasama Dengan Kami")}
             </h2>
             <p className="text-slate-400 text-xl font-light">
-              Mari diskusikan bagaimana produk kami dapat memenuhi kebutuhan bisnis dan rumah tangga Anda.
+              {t("Mari diskusikan bagaimana produk kami dapat memenuhi kebutuhan bisnis dan rumah tangga Anda.")}
             </p>
           </motion.div>
         </div>
@@ -45,7 +47,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-8">Hubungi Kami</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">{t("Hubungi Kami")}</h3>
             
             <div className="space-y-8">
               <div className="flex items-start">
@@ -65,7 +67,7 @@ export default function Contact() {
                   <Phone strokeWidth={1.5} className="w-5 h-5" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">WhatsApp</h4>
+                  <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{t("WhatsApp")}</h4>
                   <a href="https://wa.me/6281210620683" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white font-medium hover:text-yellow-500 transition-colors">
                     +62 812-1062-0683
                   </a>
@@ -77,7 +79,7 @@ export default function Contact() {
                   <MapPin strokeWidth={1.5} className="w-5 h-5" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Pabrik & Kantor</h4>
+                  <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{t("Pabrik & Kantor")}</h4>
                   <a href="https://share.google/jpGGJ9qd5jFEwerFo" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg text-white font-medium hover:text-yellow-500 transition-colors block leading-relaxed pr-4">
                     PT. Tutelage Sdn Bhd Indonesia<br />
                     Cipelang Cijeruk 16740<br />
@@ -99,55 +101,55 @@ export default function Contact() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-2">Nama Depan</label>
+                  <label className="block text-sm font-medium text-slate-400 mb-2">{t("Nama Depan")}</label>
                   <input 
                     type="text" 
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     required
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-colors relative z-10"
-                    placeholder="Budi"
+                    placeholder={t("Budi")}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-2">Nama Belakang</label>
+                  <label className="block text-sm font-medium text-slate-400 mb-2">{t("Nama Belakang")}</label>
                   <input 
                     type="text" 
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     required
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-colors relative z-10"
-                    placeholder="Santoso"
+                    placeholder={t("Santoso")}
                   />
                 </div>
               </div>
               <div className="mb-6">
-                <label className="block text-sm font-medium text-slate-400 mb-2">Email Bisnis</label>
+                <label className="block text-sm font-medium text-slate-400 mb-2">{t("Email Bisnis")}</label>
                 <input 
                   type="email" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-colors relative z-10"
-                  placeholder="budi@perusahaan.com"
+                  placeholder={t("budi@perusahaan.com")}
                 />
               </div>
               <div className="mb-8">
-                <label className="block text-sm font-medium text-slate-400 mb-2">Pesan</label>
+                <label className="block text-sm font-medium text-slate-400 mb-2">{t("Pesan")}</label>
                 <textarea 
                   rows={4}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-colors resize-none relative z-10"
-                  placeholder="Beritahu kami tentang kebutuhan Anda..."
+                  placeholder={t("Beritahu kami tentang kebutuhan Anda...")}
                 />
               </div>
               <button 
                 type="submit" 
                 className="w-full bg-yellow-600 text-white font-semibold py-4 rounded-xl flex items-center justify-center group hover:bg-yellow-500 transition-colors relative z-10"
               >
-                Kirim Pesan
+                {t("Kirim Pesan")}
                 <ArrowRight strokeWidth={1.5} className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </form>

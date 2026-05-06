@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import { MessageCircle, Mail, MapPin, Building2, Phone, Globe, CheckCircle2, ArrowRight } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function ContactPage() {
+  const { t } = useLanguage();
   const whatsappNumber = "6281210620683";
   const emailAddress = "sandywu@tutelagesdnbhdindo.com";
 
@@ -18,13 +20,13 @@ export default function ContactPage() {
             <Phone className="w-8 h-8 text-blue-400" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Hubungi Kami
+            {t("Hubungi Kami")}
           </h1>
           <p className="text-xl text-yellow-500 font-medium mb-6 tracking-wide">
-            Kami Siap Melayani Anda
+            {t("Kami Siap Melayani Anda")}
           </p>
           <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            Punya pertanyaan, ingin menjadi distributor, atau tertarik layanan maklon? Hubungi kami sekarang. Respons cepat dijamin.
+            {t("Punya pertanyaan, ingin menjadi distributor, atau tertarik layanan maklon? Hubungi kami sekarang. Respons cepat dijamin.")}
           </p>
         </motion.div>
       </section>
@@ -43,9 +45,9 @@ export default function ContactPage() {
             <div className="w-16 h-16 bg-[#25D366] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#25D366]/30">
               <MessageCircle className="w-8 h-8 text-white fill-current" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-3">Chat via WhatsApp</h3>
+            <h3 className="text-2xl font-bold text-white mb-3">{t("Chat via WhatsApp")}</h3>
             <p className="text-slate-300 mb-8 flex-1">
-              Cara tercepat untuk terhubung dengan tim kami. Tersedia setiap hari.
+              {t("Cara tercepat untuk terhubung dengan tim kami. Tersedia setiap hari.")}
             </p>
             <div className="space-y-3 mt-auto">
               <a 
@@ -53,21 +55,21 @@ export default function ContactPage() {
                 target="_blank" rel="noopener noreferrer"
                 className="w-full bg-[#25D366] hover:bg-[#20b858] text-white py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-md shadow-[#25D366]/20"
               >
-                Chat WhatsApp Sekarang
+                {t("Chat WhatsApp Sekarang")}
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber}?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20mendaftar%20sebagai%20Distributor.`}
                 target="_blank" rel="noopener noreferrer"
                 className="w-full bg-slate-800 hover:bg-slate-700 text-white border border-white/10 py-3.5 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
               >
-                Daftar Distributor
+                {t("Daftar Distributor")}
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber}?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20dengan%20Layanan%20Maklon/OEM.`}
                 target="_blank" rel="noopener noreferrer"
                 className="w-full bg-slate-800 hover:bg-slate-700 text-white border border-white/10 py-3.5 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
               >
-                Tanya Layanan Maklon
+                {t("Tanya Layanan Maklon")}
               </a>
             </div>
           </motion.div>
@@ -82,22 +84,22 @@ export default function ContactPage() {
             <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
               <Mail className="w-8 h-8 text-blue-400" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-3">Kirim Email</h3>
+            <h3 className="text-2xl font-bold text-white mb-3">{t("Kirim Email")}</h3>
             <p className="text-slate-400 mb-8 flex-1">
-              Untuk pertanyaan detail, penawaran formal, atau kerjasama bisnis.
+              {t("Untuk pertanyaan detail, penawaran formal, atau kerjasama bisnis.")}
             </p>
             <div className="space-y-3 mt-auto">
               <a 
                 href={`mailto:${emailAddress}?subject=Tanya%20Produk%20LIMA%20BINTANG`}
                 className="w-full bg-blue-600 hover:bg-blue-500 text-white py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-md shadow-blue-500/20"
               >
-                Kirim Email
+                {t("Kirim Email")}
               </a>
               <a 
                 href={`mailto:${emailAddress}?subject=Permohonan%20Distributor%20LIMA%20BINTANG`}
                 className="w-full bg-slate-800 hover:bg-slate-700 text-white border border-white/10 py-3.5 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
               >
-                Email Permohonan Distributor
+                {t("Email Permohonan Distributor")}
               </a>
             </div>
           </motion.div>
@@ -112,7 +114,7 @@ export default function ContactPage() {
             <div className="w-16 h-16 bg-yellow-500/20 rounded-2xl flex items-center justify-center mb-6">
               <MapPin className="w-8 h-8 text-yellow-500" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-3">Kunjungi / Lokasi Pabrik</h3>
+            <h3 className="text-2xl font-bold text-white mb-3">{t("Kunjungi / Lokasi Pabrik")}</h3>
             <p className="text-slate-400 mb-8 flex-1">
               Cipelang Cijeruk, Bogor, Jawa Barat
             </p>
@@ -135,7 +137,7 @@ export default function ContactPage() {
                viewport={{ once: true }}
                transition={{ duration: 0.5 }}
              >
-               <h2 className="text-3xl font-bold text-white mb-8">Informasi Perusahaan</h2>
+               <h2 className="text-3xl font-bold text-white mb-8">{t("Informasi Perusahaan")}</h2>
                
                <div className="space-y-6">
                  <div className="flex items-start gap-4">
@@ -143,9 +145,9 @@ export default function ContactPage() {
                      <Building2 className="w-6 h-6 text-yellow-500" />
                    </div>
                    <div>
-                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Nama Perusahaan</p>
+                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">{t("Nama Perusahaan")}</p>
                      <p className="text-white font-semibold text-lg">PT. Tutelage Sdn Bhd Indonesia</p>
-                     <p className="text-slate-400">(Pemilik Brand LIMA BINTANG Home Care)</p>
+                     <p className="text-slate-400">{t("(Pemilik Brand LIMA BINTANG Home Care)")}</p>
                    </div>
                  </div>
                  
@@ -154,7 +156,7 @@ export default function ContactPage() {
                      <MapPin className="w-6 h-6 text-yellow-500" />
                    </div>
                    <div className="flex-1 min-w-0">
-                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Alamat</p>
+                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">{t("Alamat")}</p>
                      <p className="text-white font-semibold text-base sm:text-lg break-words">Cipelang Cijeruk 16740</p>
                      <p className="text-slate-400 break-words">Bogor, Jawa Barat, Indonesia</p>
                    </div>
@@ -165,7 +167,7 @@ export default function ContactPage() {
                      <Phone className="w-6 h-6 text-yellow-500" />
                    </div>
                    <div className="flex-1 min-w-0">
-                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">WhatsApp / Telepon</p>
+                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">{t("WhatsApp / Telepon")}</p>
                      <p className="text-white font-semibold text-base sm:text-lg break-words">+62 812-1062-0683</p>
                    </div>
                  </div>
@@ -175,7 +177,7 @@ export default function ContactPage() {
                      <Mail className="w-6 h-6 text-yellow-500" />
                    </div>
                    <div className="flex-1 min-w-0">
-                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Email</p>
+                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">{t("Email")}</p>
                      <p className="text-white font-semibold text-base sm:text-lg break-words lg:break-normal line-clamp-2 md:line-clamp-none" style={{ wordBreak: 'break-word' }}>sandywu@tutelagesdnbhdindo.com</p>
                    </div>
                  </div>
@@ -185,7 +187,7 @@ export default function ContactPage() {
                      <Globe className="w-6 h-6 text-yellow-500" />
                    </div>
                    <div className="flex-1 min-w-0">
-                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">Website</p>
+                     <p className="text-sm text-slate-500 font-bold uppercase tracking-widest mb-1">{t("Website")}</p>
                      <p className="text-white font-semibold text-base sm:text-lg break-words">tutelagesdnbhdindo.com</p>
                    </div>
                  </div>
@@ -204,22 +206,22 @@ export default function ContactPage() {
             >
               <div className="absolute inset-0 bg-yellow-500/5"></div>
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-white mb-6">Lokasi Pabrik</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">{t("Lokasi Pabrik")}</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                  Pabrik produksi kami berlokasi di Bogor, Jawa Barat — strategis untuk distribusi ke seluruh wilayah Indonesia.
+                  {t("Pabrik produksi kami berlokasi di Bogor, Jawa Barat — strategis untuk distribusi ke seluruh wilayah Indonesia.")}
                 </p>
                 <div className="space-y-4 text-white">
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-yellow-500" />
-                    <span className="font-medium text-lg">Distribusi Nasional</span>
+                    <span className="font-medium text-lg">{t("Distribusi Nasional")}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-yellow-500" />
-                    <span className="font-medium text-lg">Produksi Massal Siap</span>
+                    <span className="font-medium text-lg">{t("Produksi Massal Siap")}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-yellow-500" />
-                    <span className="font-medium text-lg">Ex-Factory Pricing</span>
+                    <span className="font-medium text-lg">{t("Ex-Factory Pricing")}</span>
                   </div>
                 </div>
               </div>
@@ -240,10 +242,10 @@ export default function ContactPage() {
           <div className="absolute -top-32 -left-32 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">Mulai Kerjasama Sekarang</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">{t("Mulai Kerjasama Sekarang")}</h2>
             
             <p className="text-lg md:text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto mb-10">
-              Hubungi tim kami untuk mendapatkan penawaran terbaik sebagai distributor atau layanan maklon.
+              {t("Hubungi tim kami untuk mendapatkan penawaran terbaik sebagai distributor atau layanan maklon.")}
             </p>
             
             <a 
@@ -251,7 +253,7 @@ export default function ContactPage() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl shadow-[#25D366]/20 hover:shadow-[#25D366]/40 hover:-translate-y-1"
             >
-              Hubungi Kami Sekarang
+              {t("Hubungi Kami Sekarang")}
               <ArrowRight className="w-6 h-6" />
             </a>
           </div>

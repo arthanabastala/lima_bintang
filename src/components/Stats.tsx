@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "motion/react";
+import { useLanguage } from "../context/LanguageContext";
 
 function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -29,11 +30,12 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
 }
 
 export default function Stats() {
+  const { t } = useLanguage();
   const stats = [
-    { value: 14, suffix: "+", label: "Lini Produk" },
-    { value: 3, suffix: "", label: "Kategori Unggulan" },
-    { value: 1, suffix: "", label: "Distributor / Wilayah" },
-    { value: 0, suffix: "", label: "Kualitas Premium", override: "★★★★★" },
+    { value: 14, suffix: "+", label: t("Lini Produk") },
+    { value: 3, suffix: "", label: t("Kategori Unggulan") },
+    { value: 1, suffix: "", label: t("Distributor / Wilayah") },
+    { value: 0, suffix: "", label: t("Kualitas Premium"), override: "★★★★★" },
   ];
 
   return (

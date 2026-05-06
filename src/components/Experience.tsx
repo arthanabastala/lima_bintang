@@ -1,12 +1,14 @@
 import { motion } from "motion/react";
 import { CheckCircle2, ShieldCheck, RefreshCcw, Factory } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Experience() {
+  const { t } = useLanguage();
   const metrics = [
-    { name: "Konsistensi Produk", value: 95, icon: <CheckCircle2 strokeWidth={1.5} className="w-6 h-6" /> },
-    { name: "Kepuasan Pelanggan", value: 92, icon: <ShieldCheck strokeWidth={1.5} className="w-6 h-6" /> },
-    { name: "Repeat Order", value: 90, icon: <RefreshCcw strokeWidth={1.5} className="w-6 h-6" /> },
-    { name: "Produksi Internal", value: 100, icon: <Factory strokeWidth={1.5} className="w-6 h-6" /> },
+    { name: t("Konsistensi Produk"), value: 95, icon: <CheckCircle2 strokeWidth={1.5} className="w-6 h-6" /> },
+    { name: t("Kepuasan Pelanggan"), value: 92, icon: <ShieldCheck strokeWidth={1.5} className="w-6 h-6" /> },
+    { name: t("Repeat Order"), value: 90, icon: <RefreshCcw strokeWidth={1.5} className="w-6 h-6" /> },
+    { name: t("Produksi Internal"), value: 100, icon: <Factory strokeWidth={1.5} className="w-6 h-6" /> },
   ];
 
   return (
@@ -21,13 +23,13 @@ export default function Experience() {
             transition={{ duration: 0.8 }}
           >
             <h4 className="text-yellow-600 font-bold uppercase tracking-wider text-sm mb-3">
-              Standar Kami
+              {t("Standar Kami")}
             </h4>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-slate-900">
-              Kualitas, Konsistensi, Kepercayaan
+              {t("Kualitas, Konsistensi, Kepercayaan")}
             </h2>
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
-              Setiap produk dirancang dengan standar tinggi untuk memastikan performa maksimal, daya saing di pasar, serta membangun kepercayaan jangka panjang bagi pelanggan dan mitra bisnis.
+              {t("Setiap produk dirancang dengan standar tinggi untuk memastikan performa maksimal, daya saing di pasar, serta membangun kepercayaan jangka panjang bagi pelanggan dan mitra bisnis.")}
             </p>
           </motion.div>
 

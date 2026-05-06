@@ -1,37 +1,39 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ShoppingCart, Leaf, Sparkles, Droplets, Briefcase, Heart } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function PetCare() {
+  const { t } = useLanguage();
   const product = {
     name: "LIMA BINTANG PetCare Shampoo",
-    description: "Shampoo hewan peliharaan dengan formula lembut khusus untuk kucing, anjing, dan hewan lainnya. Membersihkan kotoran dan bau, serta merawat bulu agar lembut dan berkilau.",
+    description: t("Shampoo hewan peliharaan dengan formula lembut khusus untuk kucing, anjing, dan hewan lainnya. Membersihkan kotoran dan bau, serta merawat bulu agar lembut dan berkilau."),
     price: "Rp 20.000 – 35.000",
     size: "1000ML",
     image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&h=600&q=80",
-    label: "Baru"
+    label: t("Baru")
   };
 
   const benefits = [
     {
       icon: <Leaf className="w-6 h-6 text-green-400" />,
-      title: "Formula Lembut",
-      desc: "Tidak mengandung bahan keras yang dapat mengiritasi kulit sensitif hewan peliharaan."
+      title: t("Formula Lembut"),
+      desc: t("Tidak mengandung bahan keras yang dapat mengiritasi kulit sensitif hewan peliharaan.")
     },
     {
       icon: <Sparkles className="w-6 h-6 text-yellow-400" />,
-      title: "Bulu Berkilau",
-      desc: "Membuat bulu lebih lembut, berkilau, dan mudah diatur."
+      title: t("Bulu Berkilau"),
+      desc: t("Membuat bulu lebih lembut, berkilau, dan mudah diatur.")
     },
     {
       icon: <Droplets className="w-6 h-6 text-pink-400" />,
-      title: "Wangi Tahan Lama",
-      desc: "Aroma segar yang tahan lama untuk hewan kesayangan."
+      title: t("Wangi Tahan Lama"),
+      desc: t("Aroma segar yang tahan lama untuk hewan kesayangan.")
     },
     {
       icon: <Briefcase className="w-6 h-6 text-blue-400" />,
-      title: "Tersedia untuk Distributor",
-      desc: "Pasar perawatan hewan memiliki pertumbuhan tinggi dan peluang distribusi luas."
+      title: t("Tersedia untuk Distributor"),
+      desc: t("Pasar perawatan hewan memiliki pertumbuhan tinggi dan peluang distribusi luas.")
     }
   ];
 
@@ -47,13 +49,13 @@ export default function PetCare() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Pet Care Series
+              {t("Pet Care Series")}
             </h1>
             <p className="text-xl text-yellow-500 font-medium mb-6 tracking-wide flex items-center justify-center gap-2">
-              <Heart className="w-5 h-5" /> Produk Perawatan Hewan Peliharaan
+              <Heart className="w-5 h-5" /> {t("Produk Perawatan Hewan Peliharaan")}
             </p>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Formulasi lembut dan aman khusus untuk hewan kesayangan Anda. Bersih, wangi, dan bebas dari bahan berbahaya.
+              {t("Formulasi lembut dan aman khusus untuk hewan kesayangan Anda. Bersih, wangi, dan bebas dari bahan berbahaya.")}
             </p>
           </motion.div>
         </div>
@@ -89,7 +91,7 @@ export default function PetCare() {
               <div className="p-8 md:p-10 flex flex-col flex-1">
                 <div className="text-yellow-500 text-xs font-bold uppercase tracking-widest mb-3 flex items-center gap-1.5">
                   <Heart className="w-3.5 h-3.5 fill-yellow-500" />
-                  Pet Care
+                  {t("Pet Care")}
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight group-hover:text-yellow-500 transition-colors">
                   {product.name.includes("LIMA BINTANG") ? (
@@ -113,11 +115,11 @@ export default function PetCare() {
                     <div className="flex flex-wrap sm:flex-nowrap justify-between items-end gap-6 sm:gap-2">
                       <div>
                         <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5 focus:outline-none">
-                          Kemasan {product.size}
+                          {t("Kemasan")} {product.size}
                         </div>
                         <span className="text-xl md:text-2xl font-bold text-yellow-500 block leading-none">{product.price}</span>
                         <div className="text-[10px] text-slate-500 mt-2 italic">
-                          *Harga ex-factory, belum termasuk ongkos kirim
+                          {t("*Harga ex-factory, belum termasuk ongkos kirim")}
                         </div>
                       </div>
                       <a 
@@ -126,7 +128,7 @@ export default function PetCare() {
                         className="bg-yellow-500 hover:bg-yellow-400 text-slate-900 px-6 py-3 rounded-full flex items-center justify-center gap-2 font-bold text-sm transition-colors shrink-0 w-full sm:w-auto"
                       >
                         <ShoppingCart className="w-4 h-4" />
-                        Pesan
+                        {t("Pesan")}
                       </a>
                     </div>
                 </div>
@@ -144,7 +146,7 @@ export default function PetCare() {
            transition={{ duration: 0.5 }}
            className="text-center mb-12"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Keunggulan Produk</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{t("Keunggulan Produk")}</h2>
           <div className="w-16 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -182,15 +184,15 @@ export default function PetCare() {
               <Briefcase className="w-6 h-6 text-blue-400" />
             </div>
             <div>
-              <h4 className="text-white font-bold text-lg mb-2">Peluang Bisnis Pet Care</h4>
+              <h4 className="text-white font-bold text-lg mb-2">{t("Peluang Bisnis Pet Care")}</h4>
               <p className="text-slate-300 text-sm leading-relaxed max-w-2xl">
-                Pasar produk perawatan hewan di Indonesia terus berkembang pesat. Peluang distribusi sangat terbuka lebar untuk mitra bisnis. Mari berkembang bersama LIMA BINTANG!
+                {t("Pasar produk perawatan hewan di Indonesia terus berkembang pesat. Peluang distribusi sangat terbuka lebar untuk mitra bisnis. Mari berkembang bersama LIMA BINTANG!")}
               </p>
             </div>
           </div>
           <div className="relative z-10 shrink-0">
             <Link to="/#contact" className="px-6 py-3 bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-full text-sm transition-colors whitespace-nowrap block shadow-lg shadow-blue-500/20">
-              Pelajari Lebih Lanjut
+              {t("Pelajari Lebih Lanjut")}
             </Link>
           </div>
         </motion.div>

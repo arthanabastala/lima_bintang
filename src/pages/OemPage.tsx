@@ -9,8 +9,10 @@ import {
   CheckCircle2,
   ArrowRight
 } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function OemPage() {
+  const { t } = useLanguage();
   const provides = [
     {
       icon: <Building2 className="w-8 h-8 text-blue-400" />,
@@ -93,17 +95,17 @@ export default function OemPage() {
                 OEM / Private Label / Maklon
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-                Layanan Maklon & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Private Label</span>
+                {t("Layanan Maklon &")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Private Label</span>
               </h1>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                Wujudkan brand produk kebersihan Anda sendiri menggunakan fasilitas produksi dan formula terbukti dari LIMA BINTANG.
+                {t("Wujudkan brand produk kebersihan Anda sendiri menggunakan fasilitas produksi dan formula terbukti dari LIMA BINTANG.")}
               </p>
               <a 
                 href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20ingin%20Konsultasi%20Gratis%20tentang%20Maklon/OEM.`}
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1"
               >
-                Konsultasi Gratis <ArrowRight className="w-5 h-5" />
+                {t("Konsultasi Gratis")} <ArrowRight className="w-5 h-5" />
               </a>
             </motion.div>
           </div>
@@ -135,11 +137,11 @@ export default function OemPage() {
            className="bg-slate-900/50 border border-white/5 rounded-3xl p-10 lg:p-16 shadow-lg"
         >
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Produksi dengan Brand Anda Sendiri</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">{t("Produksi dengan Brand Anda Sendiri")}</h2>
             <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full mb-10"></div>
             
             <p className="text-slate-300 text-lg leading-relaxed mb-8 text-center">
-              Layanan OEM (Original Equipment Manufacturer) dan Private Label kami memungkinkan Anda untuk menciptakan produk kebersihan rumah tangga, otomotif, atau perawatan hewan di bawah brand Anda sendiri tanpa perlu membangun pabrik atau fasilitas produksi.
+              {t("Layanan OEM (Original Equipment Manufacturer) dan Private Label kami memungkinkan Anda untuk menciptakan produk kebersihan rumah tangga, otomotif, atau perawatan hewan di bawah brand Anda sendiri tanpa perlu membangun pabrik atau fasilitas produksi.")}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
@@ -177,7 +179,7 @@ export default function OemPage() {
            transition={{ duration: 0.5 }}
            className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Apa yang Kami Sediakan?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Apa yang Kami Sediakan?")}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </motion.div>
         
@@ -213,7 +215,7 @@ export default function OemPage() {
                transition={{ duration: 0.5 }}
                className="text-center mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Kategori Produk Maklon</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Kategori Produk Maklon")}</h2>
               <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
             </motion.div>
 
@@ -245,7 +247,7 @@ export default function OemPage() {
            transition={{ duration: 0.5 }}
            className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Proses Maklon LIMA BINTANG</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t("Proses Maklon LIMA BINTANG")}</h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -263,7 +265,7 @@ export default function OemPage() {
                 {idx + 1}
               </div>
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-900/80 border border-white/10 p-6 rounded-2xl shadow-sm hover:shadow-md hover:bg-slate-800 transition-all">
-                <h4 className="font-bold text-xl text-white mb-2">{step.title}</h4>
+                <h4 className="font-bold text-xl text-white mb-2">{t(step.title)}</h4>
                 <p className="text-slate-400 leading-relaxed text-sm">{step.desc}</p>
               </div>
             </motion.div>
@@ -284,10 +286,10 @@ export default function OemPage() {
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">Bangun Brand Anda Sekarang</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">{t("Bangun Brand Anda Sekarang")}</h2>
             
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
-              Mulai merek produk kebersihan Anda sendiri dengan dukungan manufaktur terpercaya dari LIMA BINTANG. Kualitas terjamin, harga kompetitif.
+              {t("Mulai merek produk kebersihan Anda sendiri dengan dukungan manufaktur terpercaya dari LIMA BINTANG. Kualitas terjamin, harga kompetitif.")}
             </p>
             
             <a 
@@ -295,7 +297,7 @@ export default function OemPage() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base transition-all shadow-xl shadow-red-600/20 hover:shadow-red-500/40 hover:-translate-y-1 text-center max-w-[280px] sm:max-w-none mx-auto leading-tight"
             >
-              <span>Ajukan Maklon Sekarang / Konsultasi Gratis</span>
+              <span>{t("Ajukan Maklon Sekarang / Konsultasi Gratis")}</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </a>
           </div>

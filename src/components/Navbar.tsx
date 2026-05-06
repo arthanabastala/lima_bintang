@@ -58,17 +58,27 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center justify-end flex-wrap flex-1 gap-x-2 lg:gap-x-3 gap-y-2 md:ml-4">
           {navLinks.map((link, idx) => (
-            <a 
-              key={idx} 
-              href={getHref(link.href)}
-              className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-xs font-bold leading-tight tracking-[0.05em] text-center transition-colors text-slate-200 hover:text-yellow-500 whitespace-nowrap"
-            >
-              {link.name}
-            </a>
+            link.href.startsWith('#') && location.pathname === '/' ? (
+              <a 
+                key={idx} 
+                href={link.href}
+                className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-xs font-bold leading-tight tracking-[0.05em] text-center transition-colors text-slate-200 hover:text-yellow-500 whitespace-nowrap"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={idx} 
+                to={getHref(link.href)}
+                className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-xs font-bold leading-tight tracking-[0.05em] text-center transition-colors text-slate-200 hover:text-yellow-500 whitespace-nowrap"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           
           <button 
-            onClick={() => setLanguage(lang => lang === "ID" ? "EN" : "ID")}
+            onClick={() => setLanguage(language === "ID" ? "EN" : "ID")}
             className="flex items-center gap-1 xl:gap-1.5 ml-2 lg:ml-4 text-[8px] md:text-[9px] lg:text-[10px] xl:text-xs font-bold tracking-wider text-white hover:text-yellow-500 transition-colors bg-white/5 hover:bg-white/10 px-2 lg:px-3 py-1.5 lg:py-2 rounded-full border border-white/10"
           >
             <Globe className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
@@ -79,7 +89,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle & Language */}
         <div className="flex items-center gap-2 md:hidden">
           <button 
-            onClick={() => setLanguage(lang => lang === "ID" ? "EN" : "ID")}
+            onClick={() => setLanguage(language === "ID" ? "EN" : "ID")}
             className="flex items-center gap-1.5 text-xs font-bold tracking-wider text-white hover:text-yellow-500 transition-colors bg-white/5 hover:bg-white/10 px-2.5 py-1.5 rounded-full border border-white/10"
           >
             <Globe className="w-3.5 h-3.5" />
@@ -104,14 +114,25 @@ export default function Navbar() {
             className="absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl shadow-xl py-6 flex flex-col px-6 md:hidden gap-4 border-t border-white/10 max-h-[calc(100vh-80px)] overflow-y-auto"
           >
             {navLinks.map((link, idx) => (
-              <a 
-                key={idx} 
-                href={getHref(link.href)}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-sm font-bold border-b border-white/10 pb-3 text-white hover:text-yellow-500"
-              >
-                {link.name}
-              </a>
+              link.href.startsWith('#') && location.pathname === '/' ? (
+                <a 
+                  key={idx} 
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm font-bold border-b border-white/10 pb-3 text-white hover:text-yellow-500"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link 
+                  key={idx} 
+                  to={getHref(link.href)}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm font-bold border-b border-white/10 pb-3 text-white hover:text-yellow-500"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
           </motion.div>
         )}

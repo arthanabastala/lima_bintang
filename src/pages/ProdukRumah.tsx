@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
 import { ShoppingCart } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function ProdukRumah() {
+  const { t } = useLanguage();
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filterCategories = [
@@ -19,10 +21,10 @@ export default function ProdukRumah() {
     {
       category: "Dishwash Series",
       name: "LIMA BINTANG DishPro",
-      description: "Sabun Cuci Piring – Formulasi jernih anti lemak, wangi tahan lama, aman untuk kulit tangan.",
+      description: t("Sabun Cuci Piring – Formulasi jernih anti lemak, wangi tahan lama, aman untuk kulit tangan."),
       variants: [
-        { size: "90ML", price: "Rp 650", package: "(36 pouch/dus)" },
-        { size: "110ML", price: "Rp 850", package: "(30 pouch/dus)" }
+        { size: "90ML", price: "Rp 650", package: t("(36 pouch/dus)") },
+        { size: "110ML", price: "Rp 850", package: t("(30 pouch/dus)") }
       ],
       label: "Best Seller",
       image: "https://images.unsplash.com/photo-1584820927498-cafe2c1c8ba8?auto=format&fit=crop&w=600&h=600&q=80",
@@ -30,21 +32,21 @@ export default function ProdukRumah() {
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Liquid",
-      description: "Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML.",
+      description: t("Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML."),
       price: "Rp 18.000 – 22.000 / pouch",
       image: "https://images.unsplash.com/photo-1585244513689-d102e3b4a2eb?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Powder",
-      description: "Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr.",
+      description: t("Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr."),
       price: "Rp 7.000 – 9.000 / pcs",
       image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG Smooth Care",
-      description: "Pewangi & Pelicin Setrika – Pakaian lebih rapi, wangi tahan lama, mudah disetrika.",
+      description: t("Pewangi & Pelicin Setrika – Pakaian lebih rapi, wangi tahan lama, mudah disetrika."),
       variants: [
         { size: "500ML", price: "Rp 12.000" },
         { size: "1000ML", price: "Rp 20.000" }
@@ -54,35 +56,35 @@ export default function ProdukRumah() {
     {
       category: "Laundry Series",
       name: "LIMA BINTANG LuxPerfume Laundry",
-      description: "Parfum Laundry Premium – Harum mewah tahan lama. Per liter.",
+      description: t("Parfum Laundry Premium – Harum mewah tahan lama. Per liter."),
       price: "Rp 25.000 – 35.000 / liter",
       image: "https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Floor Care",
       name: "LIMA BINTANG SuperFloor",
-      description: "Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML.",
+      description: t("Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML."),
       price: "Rp 16.000 – 20.000 / pouch",
       image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Specialty",
       name: "LIMA BINTANG X-Clean",
-      description: "Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML.",
+      description: t("Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML."),
       price: "Rp 18.000 – 25.000 / botol",
       image: "https://images.unsplash.com/photo-1584949514120-f10f2756d11f?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Disinfectant",
       name: "LIMA BINTANG Karbol FreshGuard",
-      description: "Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML.",
+      description: t("Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML."),
       price: "Rp 14.000 – 18.000 / pouch",
       image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=600&h=600&q=80",
     },
     {
       category: "Personal Care",
       name: "LIMA BINTANG BodyFresh Liquid Soap",
-      description: "Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML.",
+      description: t("Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
       image: "https://images.unsplash.com/photo-1556228578-8d890c2827c1?auto=format&fit=crop&w=600&h=600&q=80",
     }
@@ -104,13 +106,13 @@ export default function ProdukRumah() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Produk Rumah
+              {t("PRODUK RUMAH")}
             </h1>
             <p className="text-xl text-yellow-500 font-medium mb-6 tracking-wide">
-              Rangkaian Produk Kebersihan Lengkap
+              {t("Rangkaian Produk Kebersihan Lengkap")}
             </p>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Tersedia berbagai produk kebersihan rumah tangga dengan kualitas terstandarisasi, efektif digunakan, dan harga terjangkau untuk kebutuhan sehari-hari maupun bisnis distribusi.
+              {t("Tersedia berbagai produk kebersihan rumah tangga dengan kualitas terstandarisasi, efektif digunakan, dan harga terjangkau untuk kebutuhan sehari-hari maupun bisnis distribusi.")}
             </p>
           </motion.div>
         </div>
@@ -207,7 +209,7 @@ export default function ProdukRumah() {
                     <div className="flex justify-between items-end gap-2">
                       <div>
                         <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1 focus:outline-none">
-                          Harga Mulai
+                          {t("Harga Mulai")}
                         </div>
                         <span className="text-lg font-bold text-yellow-500 block leading-none">{product.price}</span>
                       </div>
@@ -228,7 +230,7 @@ export default function ProdukRumah() {
                       className="w-full mt-5 py-2.5 bg-white/5 hover:bg-yellow-500 hover:text-slate-900 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-colors flex justify-center items-center gap-2"
                     >
                       <ShoppingCart className="w-4 h-4" />
-                      Pesan Sekarang
+                      {t("Pesan Sekarang")}
                     </a>
                   )}
                 </div>
