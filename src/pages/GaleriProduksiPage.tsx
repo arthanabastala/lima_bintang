@@ -95,9 +95,6 @@ export default function GaleriProduksiPage() {
           <h2 className="text-3xl font-bold text-white mb-6">{t("Artikel Produksi Pouch")}</h2>
           <div className="text-slate-300 leading-relaxed space-y-6">
             <p>
-              {t("[Silakan masukkan konten artikel pembuatan pouch yang Anda siapkan di sini. Paragraf ini merupakah placeholder.]")}
-            </p>
-            <p>
               {t("Proses pembuatan standing pouch di LIMA BINTANG Home Care dilakukan dengan presisi dan standar kualitas tinggi. Kami menggunakan sistem otomatisasi untuk memastikan keamanan produk dan higienitas kemasan. Standar kontrol kualitas (Quality Control) kami dirancang untuk mencegah kebocoran, memastikan segel kuat, dan kualitas cetakan kemasan yang konsisten.")}
             </p>
             <p>

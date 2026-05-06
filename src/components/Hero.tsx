@@ -36,9 +36,9 @@ export default function Hero() {
               <Star key={i} strokeWidth={1.5} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
             ))}
           </div>
-          <div className="flex flex-col items-center justify-center text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-4 sm:px-6 py-2 sm:py-3 gap-2">
+          <div className="flex flex-row items-center justify-center text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-4 sm:px-6 py-2 sm:py-3 gap-3">
             <img src="/tutelage-logo.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
-            PT. Tutelage Sdn Bhd Indonesia
+            <span>PT. Tutelage Sdn Bhd Indonesia</span>
           </div>
           <h1 className="flex flex-col items-center justify-center gap-y-4 sm:gap-y-6 mb-6 mt-2">
             <img 

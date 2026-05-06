@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
@@ -8,13 +9,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2">
-             <a href="/" className="flex items-center mb-4 group">
+             <Link to="/" className="flex items-center mb-4 group">
               <img 
                 src="/logo.png" 
                 alt="Lima Bintang Logo" 
                 className="h-8 max-w-[200px] object-contain transition-transform group-hover:scale-105"
               />
-            </a>
+            </Link>
             <p className="text-slate-400 text-sm max-w-sm">
               {t("Produsen produk household, otomotif, dan perawatan berkualitas premium untuk rumah tangga Indonesia.")}
             </p>
@@ -22,16 +23,16 @@ export default function Footer() {
           <div>
             <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">{t("Company")}</h5>
             <ul className="space-y-2">
-              <li><a href="/#about" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Profil Perusahaan")}</a></li>
-              <li><a href="/#services" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Mengapa Kami.")}</a></li>
-              <li><a href="/#products" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Portofolio Produk")}</a></li>
+              <li><Link to="/#about" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Profil Perusahaan")}</Link></li>
+              <li><Link to="/#services" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Mengapa Kami.")}</Link></li>
+              <li><Link to="/#products" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Portofolio Produk")}</Link></li>
             </ul>
           </div>
           <div>
             <h5 className="font-bold text-[10px] tracking-widest uppercase mb-4 text-slate-500">{t("Bantuan")}</h5>
             <ul className="space-y-2">
-              <li><a href="/faq" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">FAQ</a></li>
-              <li><a href="/contact" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Kontak")}</a></li>
+              <li><Link to="/faq" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">FAQ</Link></li>
+              <li><Link to="/contact" className="text-slate-400 hover:text-white text-sm transition-colors font-medium">{t("Kontak")}</Link></li>
             </ul>
           </div>
         </div>

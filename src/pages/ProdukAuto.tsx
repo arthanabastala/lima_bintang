@@ -122,14 +122,15 @@ export default function ProdukAuto() {
                         </div>
                         <span className="text-lg font-bold text-yellow-500 block leading-none">{product.price}</span>
                       </div>
-                      <a 
-                        href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20pesan%20produk%20${encodeURIComponent(product.name)}`}
-                        target="_blank" rel="noopener noreferrer"
-                        className="bg-white/5 hover:bg-yellow-500 hover:text-slate-900 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors shrink-0"
-                      >
-                        <ShoppingCart className="w-4 h-4" />
-                      </a>
                     </div>
+                    <a 
+                      href={`https://wa.me/6281210620683?text=Halo%20LIMA%20BINTANG,%20saya%20tertarik%20pesan%20produk%20${encodeURIComponent(product.name)}`}
+                      target="_blank" rel="noopener noreferrer"
+                      className="w-full mt-5 py-3 bg-transparent border border-white hover:bg-yellow-500 hover:border-yellow-500 hover:text-slate-900 text-white rounded-full text-xs font-bold uppercase tracking-wider transition-colors flex justify-center items-center gap-2"
+                    >
+                      <ShoppingCart className="w-4 h-4" />
+                      {t("Pesan Sekarang")}
+                    </a>
                 </div>
               </div>
             </motion.div>

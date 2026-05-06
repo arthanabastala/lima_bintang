@@ -128,7 +128,7 @@ export default function PetCare() {
                         className="bg-yellow-500 hover:bg-yellow-400 text-slate-900 px-6 py-3 rounded-full flex items-center justify-center gap-2 font-bold text-sm transition-colors shrink-0 w-full sm:w-auto"
                       >
                         <ShoppingCart className="w-4 h-4" />
-                        {t("Pesan")}
+                        {t("Pesan Sekarang")}
                       </a>
                     </div>
                 </div>
