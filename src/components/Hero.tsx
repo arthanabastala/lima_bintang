@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
         {/* Using a placeholder stock video */}
@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex flex-col items-center text-center pb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,8 @@ export default function Hero() {
               <Star key={i} strokeWidth={1.5} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
             ))}
           </div>
-          <div className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-3 sm:px-4 py-1.5 sm:py-2">
+          <div className="flex flex-col items-center justify-center text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-slate-300 mb-4 sm:mb-6 glass-card px-4 sm:px-6 py-2 sm:py-3 gap-2">
+            <img src="/tutelage-logo.png" alt="Tutelage Logo" className="h-8 sm:h-10 w-auto object-contain" />
             PT. Tutelage Sdn Bhd Indonesia
           </div>
           <h1 className="flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-2 mb-4 sm:mb-6 mt-2">
