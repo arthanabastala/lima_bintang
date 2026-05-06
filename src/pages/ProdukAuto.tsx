@@ -25,7 +25,7 @@ export default function ProdukAuto() {
       name: "LIMA BINTANG GlassClear Pro",
       description: t("Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal."),
       price: "Rp 25.000 – 35.000 / pcs",
-      image: "/",
+      image: "/GlassClearPro.png",
     },
     {
       category: "Automotive Series",
