@@ -111,8 +111,8 @@ export default function Portfolio() {
                 </div>
 
                 {/* Product Info */}
-                <div className="p-6"></div>
-                <div className="flex items-center gap-4 mb-4">
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 shrink-0 group-hover:text-yellow-500 group-hover:bg-yellow-500/10 transition-colors duration-300">
                     {product.icon}
                   </div>
@@ -120,13 +120,13 @@ export default function Portfolio() {
                     <div className="text-yellow-500 text-[10px] font-bold uppercase tracking-wider mb-1">
                       {product.category}
                     </div>
-                    <h3 className="text-xl font-bold text-white">
+                    <h3 className="text-xl font-bold text-white leading-tight">
                       {product.title.includes("LIMA BINTANG") ? (
-                        <span className="flex items-center flex-wrap gap-1.5 leading-tight">
+                        <span className="inline-flex items-center flex-wrap gap-x-1.5 gap-y-0.5">
                           <img 
                             src="/logo.webp" 
                             alt="LIMA BINTANG" 
-                            className="h-4 sm:h-5 object-contain inline-block -mt-1"
+                            className="h-4 sm:h-5 object-contain"
                           />
                           <span>{product.title.replace("LIMA BINTANG ", "")}</span>
                         </span>
@@ -137,11 +137,11 @@ export default function Portfolio() {
                   </div>
                 </div>
                 
-                <div className="flex-1">
+                
                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
                     {product.description}
                   </p>
-                </div>
+
 
                 <div className="pt-5 border-t border-white/10 mt-auto">
                   <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5">
