@@ -148,7 +148,7 @@ export default function Portfolio() {
                     {t("Harga Mulai")}
                   </div>
                   <div className="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors duration-300">
-                    {product.price.replace("Mulai ", "")}
+                      {product.price.replace("Mulai ", "")}
                     </div>
                   </div>
                 </div>

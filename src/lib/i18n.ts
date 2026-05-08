@@ -310,7 +310,6 @@ export const translations = {
     'Mengapa Bisnis Ini Menguntungkan?': 'Why is this Business Profitable?',
     'Digunakan Setiap Hari': 'Used Every Day',
     'Produk kebutuhan rumah tangga seperti sabun, deterjen, dan pembersih digunakan setiap hari. Demand stabil sepanjang tahun dan tidak terpengaruh tren.': 'Household necessity products such as soap, detergent, and cleaners are used every day. Demand is stable throughout the year and unaffected by trends.',
-    'Repeat Order Tinggi': 'High Repeat Order',
     'Pelanggan yang puas akan terus membeli ulang, menciptakan cashflow yang konsisten dan dapat diprediksi.': 'Satisfied customers will continue to repurchase, creating a consistent and predictable cash flow.',
     'Perputaran Cepat & Stabil': 'Fast & Stable Turnover',
     'Produk fast moving dengan rotasi tinggi, cocok untuk bisnis berbasis volume dan pengembangan sub-distributor.': 'Fast-moving products with high rotation, suitable for volume-based businesses and sub-distributor development.',
