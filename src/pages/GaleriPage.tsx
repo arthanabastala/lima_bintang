@@ -5,12 +5,12 @@ import { useLanguage } from "../context/LanguageContext";
 export default function GaleriPage() {
   const { t } = useLanguage();
   const images = [
-    { src: "/sabuncucipiring.webp", title: t("Produk Rumah Tangga") },
-    { src: "/Cleanwash_Liquid.webp", title: t("Deterjen Cair") },
-    { src: "/AutoShine_Shampoo.webp", title: t("Shampoo Auto") },
-    { src: "/sampocare.webp", title: t("Pelicin Serbaguna") },
-    { src: "/PetCare_Shampoo.webp", title: t("Pet Care") },
-    { src: "/GlassClearPro.png", title: t("Pembersih Kaca") },
+    { src: "/cucipiring.webp", title: t("Produk Rumah Tangga") },
+    { src: "/cleanwashliquid.webp", title: t("Deterjen Cair") },
+    { src: "/autoshineshampoo.webp", title: t("Shampoo Auto") },
+    { src: "/smoothcare.webp", title: t("Pelicin Serbaguna") },
+    { src: "/petcareshampoo.webp", title: t("Pet Care") },
+    { src: "/glassclearpro.webp", title: t("Pembersih Kaca") },
   ];
 
   return (

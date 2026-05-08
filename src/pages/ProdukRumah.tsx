@@ -27,21 +27,21 @@ export default function ProdukRumah() {
         { size: "110ML", price: "Rp 850", package: t("(30 pouch/dus)") }
       ],
       label: "Best Seller",
-      image: "/sabuncucipiring.webp",
+      image: "/cucipiring.webp",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Liquid",
       description: t("Sabun Cuci Pakaian Cair – Formula konsentrat, bersih maksimal, segar di kulit. 1000ML."),
       price: "Rp 18.000 – 22.000 / pouch",
-      image: "/Cleanwash_Liquid.webp",
+      image: "/cleanwashliquid.webp",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG CleanWash Powder",
       description: t("Deterjen Bubuk – Ampuh membersihkan noda membandel, busa melimpah, aroma segar. ±800–900gr."),
       price: "Rp 7.000 – 9.000 / pcs",
-      image: "/Cleanwash_Powder.webp",
+      image: "/cleanwashpowder.webp",
     },
     {
       category: "Laundry Series",
@@ -51,42 +51,42 @@ export default function ProdukRumah() {
         { size: "500ML", price: "Rp 12.000" },
         { size: "1000ML", price: "Rp 20.000" }
       ],
-      image: "/sampocare.webp",
+      image: "/smoothcare.webp",
     },
     {
       category: "Laundry Series",
       name: "LIMA BINTANG LuxPerfume Laundry",
       description: t("Parfum Laundry Premium – Harum mewah tahan lama. Per liter."),
       price: "Rp 25.000 – 35.000 / liter",
-      image: "/LuxPerfume_Laundry.webp",
+      image: "/luxperfume.webp",
     },
     {
       category: "Floor Care",
       name: "LIMA BINTANG SuperFloor",
       description: t("Pembersih Lantai Konsentrat – Disinfektan, membersihkan dan mewangikan lantai. 1000ML."),
       price: "Rp 16.000 – 20.000 / pouch",
-      image: "/SuperFloor.webp",
+      image: "/superfloor.webp",
     },
     {
       category: "Specialty",
       name: "LIMA BINTANG X-Clean",
       description: t("Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML."),
       price: "Rp 18.000 – 25.000 / botol",
-      image: "/X-Clean.webp",
+      image: "/powerdescale.webp",
     },
     {
       category: "Disinfectant",
       name: "LIMA BINTANG Karbol FreshGuard",
       description: t("Karbol Wangi Anti Bakteri – Membunuh kuman dan bakteri. 1000ML."),
       price: "Rp 14.000 – 18.000 / pouch",
-      image: "/Karbol_Freshguard.jpeg",
+      image: "/karbol.webp",
     },
     {
       category: "Personal Care",
       name: "LIMA BINTANG BodyFresh Liquid Soap",
       description: t("Sabun Mandi Cair – Membersihkan dan melembapkan kulit. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
-      image: "/BodyFresh_Liquid_Soap.webp",
+      image: "/bodyfresh.webp",
     }
   ];
 

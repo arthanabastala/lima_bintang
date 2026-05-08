@@ -10,7 +10,7 @@ export default function PetCare() {
     description: t("Shampoo hewan peliharaan dengan formula lembut khusus untuk kucing, anjing, dan hewan lainnya. Membersihkan kotoran dan bau, serta merawat bulu agar lembut dan berkilau."),
     price: "Rp 20.000 – 35.000",
     size: "1000ML",
-    image: "/PetCare_Shampoo.webp",
+    image: "/petcareshampoo.webp",
     label: t("Baru")
   };
 

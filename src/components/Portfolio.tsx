@@ -14,7 +14,7 @@ export default function Portfolio() {
       price: "Mulai Rp 650 / pouch",
       label: "Fast Moving",
       labelColor: "text-blue-400 bg-blue-500/20 border-blue-500/30",
-      image: "/sabuncucipiring.webp",
+      image: "/cucipiring.webp",
       link: "/produk-rumah"
     },
     {
@@ -25,7 +25,7 @@ export default function Portfolio() {
       price: "Mulai Rp 7.000",
       label: "Best Seller",
       labelColor: "text-yellow-400 bg-yellow-500/20 border-yellow-500/30",
-      image: "/Cleanwash_Powder.webp",
+      image: "/cleanwashpowder.webp",
       link: "/produk-rumah"
     },
     {
@@ -34,7 +34,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG AutoShine",
       description: "Shampoo Mobil & Motor Premium",
       price: "Mulai Rp 18.000 / 1000ML",
-      image: "/AutoShine_Shampoo.webp",
+      image: "/autoshineshampoo.webp",
       link: "/produk-auto"
     },
     {
@@ -43,7 +43,7 @@ export default function Portfolio() {
       title: "LIMA BINTANG PetCare",
       description: "Shampoo Hewan Peliharaan",
       price: "Mulai Rp 20.000 / 1000ML",
-      image: "/PetCare_Shampoo.webp",
+      image: "/petcareshampoo.webp",
       link: "/pet-care"
     }
   ];

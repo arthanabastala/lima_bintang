@@ -11,28 +11,28 @@ export default function ProdukAuto() {
       description: t("Shampoo Mobil & Motor – Formula pH balanced, membersihkan tanpa merusak cat, hasil bersih mengkilap. 1000ML."),
       price: "Rp 18.000 – 25.000 / pouch",
       label: t("Terlaris"),
-      image: "/AutoShine_Shampoo.webp",
+      image: "/autoshineshampoo.webp",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG TireGloss Pro",
       description: t("Semir Ban – Kilap hitam pekat, tahan cuaca, melindungi karet dari keretakan."),
       price: "Rp 20.000 – 30.000 / pcs",
-      image: "/TireGlossPro.webp",
+      image: "/tireglosspro.webp",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG GlassClear Pro",
       description: t("Pembersih Jamur Kaca Mobil – Menghilangkan jamur & water spot, hasil jernih maksimal."),
       price: "Rp 25.000 – 35.000 / pcs",
-      image: "/GlassClearPro.png",
+      image: "/glassclearpro.png",
     },
     {
       category: "Automotive Series",
       name: "LIMA BINTANG AutoPerfume Hanging",
       description: t("Parfum Gantung Mobil – Aroma tahan lama dengan desain elegan untuk kabin kendaraan."),
       price: "Rp 8.000 – 12.000 / pcs",
-      image: "/parfumeauto.webp",
+      image: "/autoparfume.webp",
     }
   ];
 
