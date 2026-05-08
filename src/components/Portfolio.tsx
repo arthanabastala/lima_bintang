@@ -80,10 +80,10 @@ export default function Portfolio() {
             >
               <Link 
                 to={product.link}
-                className="group relative rounded-2xl glass-card flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(234,179,8,0.15)] transition-all duration-500 w-full"
+                className="group relative rounded-2xl glass-card flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(234,179,8,0.15)] transition-all duration-500 w-full h-full"
               >
                 {/* Product Image Area */}
-                <div className="relative h-64 w-full overflow-hidden bg-slate-900 border-b border-white/5 group-hover:border-white/10 transition-colors">
+                <div className="relative h-64 w-full shrink-0 overflow-hidden bg-slate-900 border-b border-white/5 group-hover:border-white/10 transition-colors">
                   {/* Cinematic Background */}
                   <div className="absolute inset-0 z-0">
                     <img 
@@ -102,51 +102,49 @@ export default function Portfolio() {
                     alt={product.title} 
                     className="w-full h-full object-contain p-6 relative z-10 group-hover:scale-110 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)] transition-transform duration-700"
                   />
-                  
                   {product.label && (
                     <div className={`absolute top-4 right-4 z-20 px-3 py-1.5 rounded-full text-[10px] font-bold border backdrop-blur-md uppercase tracking-wider ${product.labelColor}`}>
                       {product.label}
                     </div>
                   )}
                 </div>
-
+                
                 {/* Product Info */}
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 shrink-0 group-hover:text-yellow-500 group-hover:bg-yellow-500/10 transition-colors duration-300">
-                    {product.icon}
-                  </div>
-                  <div>
-                    <div className="text-yellow-500 text-[10px] font-bold uppercase tracking-wider mb-1">
-                      {product.category}
+                    <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 shrink-0 group-hover:text-yellow-500 group-hover:bg-yellow-500/10 transition-colors duration-300">
+                      {product.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-white leading-tight">
-                      {product.title.includes("LIMA BINTANG") ? (
-                        <span className="inline-flex items-center flex-wrap gap-x-1.5 gap-y-0.5">
-                          <img 
-                            src="/logo.webp" 
-                            alt="LIMA BINTANG" 
-                            className="h-4 sm:h-5 object-contain"
-                          />
-                          <span>{product.title.replace("LIMA BINTANG ", "")}</span>
-                        </span>
-                      ) : (
-                        product.title
-                      )}
-                    </h3>
+                    <div>
+                      <div className="text-yellow-500 text-[10px] font-bold uppercase tracking-wider mb-1">
+                        {product.category}
+                      </div>
+                      <h3 className="text-xl font-bold text-white leading-tight">
+                        {product.title.includes("LIMA BINTANG") ? (
+                          <span className="inline-flex items-center flex-wrap gap-x-1.5 gap-y-0.5">
+                            <img 
+                              src="/logo.png" 
+                              alt="LIMA BINTANG" 
+                              className="h-4 sm:h-5 object-contain"
+                            />
+                            <span>{product.title.replace("LIMA BINTANG ", "")}</span>
+                          </span>
+                        ) : (
+                          product.title
+                        )}
+                      </h3>
+                    </div>
                   </div>
-                </div>
-                
-                
+                  
                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
                     {product.description}
                   </p>
 
-                <div className="pt-5 border-t border-white/10 mt-auto">
-                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5">
-                    {t("Harga Mulai")}
-                  </div>
-                  <div className="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors duration-300">
+                  <div className="pt-5 border-t border-white/10 mt-auto">
+                    <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5">
+                      {t("Harga Mulai")}
+                    </div>
+                    <div className="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors duration-300">
                       {product.price.replace("Mulai ", "")}
                     </div>
                   </div>
@@ -154,6 +152,7 @@ export default function Portfolio() {
               </Link>
             </motion.div>
           ))}
+        </div>
       </div>
     </section>
   );
