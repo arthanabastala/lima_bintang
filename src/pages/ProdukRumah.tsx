@@ -148,15 +148,27 @@ export default function ProdukRumah() {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.4 }}
               key={product.name}
-              className="bg-slate-900/80 rounded-2xl overflow-hidden group hover:shadow-xl hover:shadow-yellow-500/5 transition-all shadow-md flex flex-col border border-white/10 hover:border-yellow-500/50 hover:bg-slate-900 relative"
+              className="bg-slate-900/80 rounded-2xl overflow-hidden group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col border border-white/10 hover:border-yellow-500/50 relative"
             >
               {/* Product Image */}
-              <div className="aspect-[3/4] overflow-hidden relative bg-white/5 flex items-center justify-center border-b border-white/5">
-                <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+              <div className="h-64 sm:h-[280px] w-full overflow-hidden relative bg-slate-900 flex items-center justify-center border-b border-white/5">
+                {/* Cinematic Background */}
+                <div className="absolute inset-0 z-0">
+                  <img 
+                    src={product.image} 
+                    className="w-full h-full object-cover blur-2xl scale-125 opacity-40 group-hover:opacity-60 transition-opacity duration-700" 
+                    alt="" 
+                    aria-hidden="true" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-slate-900/20"></div>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-yellow-500/10 mix-blend-overlay transition-opacity duration-700 pointer-events-none"></div>
+                </div>
+                
+                {/* Main Product Image */}
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 relative z-0" 
+                  className="w-full h-full object-contain p-6 relative z-10 group-hover:scale-110 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)] transition-transform duration-700"  
                 />
                 
                 {product.label && (
