@@ -151,7 +151,6 @@ export default function Portfolio() {
                       {product.price.replace("Mulai ", "")}
                     </div>
                   </div>
-                </div>
               </Link>
             </motion.div>
           ))}
