@@ -151,7 +151,7 @@ export default function ProdukRumah() {
               className="bg-slate-900/80 rounded-2xl overflow-hidden group hover:shadow-xl hover:shadow-yellow-500/5 transition-all shadow-md flex flex-col border border-white/10 hover:border-yellow-500/50 hover:bg-slate-900 relative"
             >
               {/* Product Image */}
-              <div className="aspect-[4/3] overflow-hidden relative bg-white/5 flex items-center justify-center border-b border-white/5">
+              <div className="aspect-[3/4] overflow-hidden relative bg-white/5 flex items-center justify-center border-b border-white/5">
                 <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
                 <img 
                   src={product.image} 
