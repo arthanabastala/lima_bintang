@@ -173,13 +173,6 @@ export const translations = {
     'Kami Siap Melayani Anda': 'We Are Ready to Serve You',
     'Punya pertanyaan, ingin menjadi distributor, atau tertarik layanan maklon? Hubungi kami sekarang. Respons cepat dijamin.': 'Have a question, want to become a distributor, or interested in toll manufacturing services? Contact us now. Fast response guaranteed.',
 
-    // Misc Distributor
-    'Mengapa Bisnis Ini Menguntungkan?': 'Why is This Business Profitable?',
-    'Skema Distribusi Eksklusif': 'Exclusive Distribution Scheme',
-    'Langkah Bergabung': 'Steps to Join',
-    '⚠️ Perhatian: Wilayah distribusi terbatas dan langsung dikunci untuk mitra yang lebih siap. Tidak ada sistem booking tanpa komitmen awal. Segera hubungi kami sebelum wilayah Anda diambil.': '⚠️ Attention: Distribution territory is limited and locked for ready partners. No booking without initial commitment. Contact us immediately before your territory is taken.',
-    'Hubungi Sekarang / Ajukan Kerjasama': 'Contact Now / Propose Partnership',
-
     // Misc Contact
     'Chat via WhatsApp': 'Chat via WhatsApp',
     'Cara tercepat untuk terhubung dengan tim kami. Tersedia setiap hari.': 'The fastest way to connect with our team. Available every day.',
@@ -230,7 +223,6 @@ export const translations = {
     // Produk Rumah
     'Rangkaian Produk Kebersihan Lengkap': 'Complete Cleaning Product Line',
     'Tersedia berbagai produk kebersihan rumah tangga dengan kualitas terstandarisasi, efektif digunakan, dan harga terjangkau untuk kebutuhan sehari-hari maupun bisnis distribusi.': 'Available various household cleaning products with standardized quality, effective use, and affordable prices for daily needs and distribution business.',
-    'Harga Mulai': 'Starting Price',
     'Pesan Sekarang': 'Order Now',
     'Sabun Cuci Piring – Formulasi jernih anti lemak, wangi tahan lama, aman untuk kulit tangan.': 'Dishwashing Soap - Clear anti-fat formulation, long-lasting fragrance, safe for skin.',
     '(36 pouch/dus)': '(36 pouches/box)',
@@ -264,7 +256,6 @@ export const translations = {
     'Baru': 'New',
     'Kemasan': 'Packaging',
     '*Harga ex-factory, belum termasuk ongkos kirim': '*Ex-factory price, excluding shipping costs',
-    'Pesan': 'Order',
     'Keunggulan Produk': 'Product Excellence',
     'Formula Lembut': 'Gentle Formula',
     'Tidak mengandung bahan keras yang dapat mengiritasi kulit sensitif hewan peliharaan.': 'Contains no harsh ingredients that could irritate pet\'s sensitive skin.',
@@ -296,6 +287,14 @@ export const translations = {
     'Gudang Penyimpanan': 'Storage Warehouse',
     'Pembuatan Standing Pouch': 'Standing Pouch Production',
     'Proses produksi kemasan berkualitas di pabrik kami': 'High-quality packaging production process in our factory',
+    'Video Produksi (Pouch)': 'Production Video (Pouch)',
+    'Geser untuk melihat video proses selanjutnya': 'Swipe to see the next process video',
+    'Video Proses Produksi 1': 'Production Process Video 1',
+    'Video Proses Produksi 2': 'Production Process Video 2',
+    'Video Proses Produksi 3': 'Production Process Video 3',
+    'Video Proses Produksi 4': 'Production Process Video 4',
+    'Silakan ganti placeholder ini dengan file video / embed Iframe Anda.': 'Please replace this placeholder with your video file / Iframe embed.',
+    'Format Portrait 9:16': 'Portrait Format 9:16',
     '[Area untuk Video / Embed URL]': '[Video / Embed URL Area]',
     'Silakan unggah atau embed video produksi pouch di sini': 'Please upload or embed pouch production video here',
     'Galeri Foto Pabrik': 'Factory Photo Gallery',

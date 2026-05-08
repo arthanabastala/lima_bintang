@@ -72,12 +72,24 @@ export default function PetCare() {
               className="bg-slate-900/80 rounded-3xl overflow-hidden group hover:shadow-xl hover:shadow-yellow-500/5 transition-all shadow-md flex flex-col md:flex-row border border-white/10 hover:border-yellow-500/50 hover:bg-slate-900 max-w-4xl w-full"
             >
               {/* Product Image */}
-              <div className="md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative bg-white/5 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/5">
-                <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+              <div className="md:w-2/5 h-64 sm:h-80 md:h-auto md:min-h-[400px] overflow-hidden relative bg-slate-900 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/5">
+                {/* Cinematic Background */}
+                <div className="absolute inset-0 z-0">
+                  <img 
+                    src={product.image} 
+                    className="w-full h-full object-cover blur-2xl scale-125 opacity-40 group-hover:opacity-60 transition-opacity duration-700" 
+                    alt="" 
+                    aria-hidden="true" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-slate-900 via-slate-900/60 to-slate-900/20"></div>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-yellow-500/10 mix-blend-overlay transition-opacity duration-700 pointer-events-none"></div>
+                </div>
+                
+                {/* Main Product Image */}
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 relative z-0" 
+                  className="w-full h-full object-contain p-8 relative z-10 group-hover:scale-110 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)] transition-transform duration-700"  
                 />
                 
                 {product.label && (

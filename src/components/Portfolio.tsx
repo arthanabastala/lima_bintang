@@ -80,22 +80,38 @@ export default function Portfolio() {
             >
               <Link 
                 to={product.link}
-                className="group relative rounded-2xl glass-card flex flex-col p-6 hover:border-yellow-500/50 transition-all duration-300 w-full"
+                className="group relative rounded-2xl glass-card flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(234,179,8,0.15)] transition-all duration-500 w-full"
               >
-                <div className="relative aspect-square mb-6 rounded-xl overflow-hidden bg-slate-900 border border-white/5 shadow-inner group-hover:border-white/10 transition-colors">
+                {/* Product Image Area */}
+                <div className="relative h-64 w-full overflow-hidden bg-slate-900 border-b border-white/5 group-hover:border-white/10 transition-colors">
+                  {/* Cinematic Background */}
+                  <div className="absolute inset-0 z-0">
+                    <img 
+                      src={product.image} 
+                      className="w-full h-full object-cover blur-2xl scale-125 opacity-40 group-hover:opacity-60 transition-opacity duration-700" 
+                      alt="" 
+                      aria-hidden="true" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-slate-900/20"></div>
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-yellow-500/10 mix-blend-overlay transition-opacity duration-700 pointer-events-none"></div>
+                  </div>
+                  
+                  {/* Main Product Image */}
                   <img 
                     src={product.image} 
                     alt={product.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-contain p-6 relative z-10 group-hover:scale-110 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)] transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
                   {product.label && (
-                    <div className={`absolute top-4 right-4 px-3 py-1.5 rounded-full text-[10px] font-bold border backdrop-blur-md uppercase tracking-wider ${product.labelColor}`}>
+                    <div className={`absolute top-4 right-4 z-20 px-3 py-1.5 rounded-full text-[10px] font-bold border backdrop-blur-md uppercase tracking-wider ${product.labelColor}`}>
                       {product.label}
                     </div>
                   )}
                 </div>
-                
+
+                {/* Product Info */}
+                <div className="p-6"></div>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 shrink-0 group-hover:text-yellow-500 group-hover:bg-yellow-500/10 transition-colors duration-300">
                     {product.icon}
@@ -133,6 +149,7 @@ export default function Portfolio() {
                   </div>
                   <div className="text-lg font-bold text-white group-hover:text-yellow-500 transition-colors duration-300">
                     {product.price.replace("Mulai ", "")}
+                    </div>
                   </div>
                 </div>
               </Link>
