@@ -142,7 +142,6 @@ export default function Portfolio() {
                     {product.description}
                   </p>
 
-
                 <div className="pt-5 border-t border-white/10 mt-auto">
                   <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1.5">
                     {t("Harga Mulai")}
@@ -151,10 +150,10 @@ export default function Portfolio() {
                       {product.price.replace("Mulai ", "")}
                     </div>
                   </div>
+                </div>
               </Link>
             </motion.div>
           ))}
-        </div>
       </div>
     </section>
   );
