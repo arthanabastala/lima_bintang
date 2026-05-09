@@ -72,7 +72,7 @@ export default function ProdukRumah() {
       name: "LIMA BINTANG X-Clean",
       description: t("Pembersih Kerak Serbaguna – Untuk kamar mandi, wastafel, dapur. 1000ML."),
       price: "Rp 18.000 – 25.000 / botol",
-      image: "/powerdescale.webp",
+      image: "/xclean.webp",
     },
     {
       category: "Disinfectant",

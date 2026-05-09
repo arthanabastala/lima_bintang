@@ -127,7 +127,7 @@ export default function About() {
                 </div>
                 
                 <img 
-                  src="/powerdescale.webp" 
+                  src="/xclean.webp" 
                   alt="General Cleaning" 
                   className="absolute inset-0 w-full h-full object-contain p-4 sm:p-6 relative z-10 group-hover:scale-110 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-out"
                 />
